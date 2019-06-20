@@ -1,0 +1,9 @@
+.slogan{
+    position: relative;
+    background-image: url('../images/comprimida 2.jpg');
+    height: 400px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
