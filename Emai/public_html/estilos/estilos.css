@@ -11,3 +11,16 @@
     height: 500px;
     
 }
+.titulo{
+  background: #343a40;
+    color: white;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.detalles .img-fluid{
+    height: 450px;
+    text-align: center;
+}
+.detalles .text-justify{
+    margin-top: 70px;
+}
