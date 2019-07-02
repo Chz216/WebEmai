@@ -14,10 +14,10 @@ and open the template in the editor.
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <nav class="navbar navbar-light bg-dark">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/emai.png" width="100" height="50" alt="">
+                    <img src="images/emai.png" width="110" height="55" alt="">
 
                 </a>
             </nav>
@@ -30,16 +30,16 @@ and open the template in the editor.
                     <li class="nav-item active">
                         <a class="nav-link vavbar-dark" href="index.html">INICIO<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="catalogo.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CATALOGO
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="catalogo.html">Cuerda</a>
-                            <a class="dropdown-item" href="catalogo.html">Percuisión</a>
-                            <a class="dropdown-item" href="catalogo.html">Viento</a>
-                        </div>
-                    </li>
+                   <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="catalogo.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CATALOGO
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="catalogo.html">Cuerda</a>
+          <a class="dropdown-item" href="catalogo.html">Percuisión</a>
+          <a class="dropdown-item" href="catalogo.html">Viento</a>
+        </div>
+      </li>
 
 
                     <li class="nav-item">
@@ -56,64 +56,74 @@ and open the template in the editor.
             </div>
         </nav>
 
+        <div class="col-lg-12 mt-4">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Marcas
+                                    </button>
+                                </h2>
+                            </div>
 
-
-        <div class="row filtro">
-            <div class="col-2 filtro-productos">
-                <div class="nav-collapse nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a href="#" class="nav-link d-flex justify-content-between mb-2"><span>MARCAS</span></a>
-              
-                    <a href="#" class="nav-link mb-2 titulos-filtro">Marca 1</a>
-                    <a href="#" class="nav-link mb-2 titulos-filtro">Marca 2</a>
-                    <a href="#" class="nav-link mb-2 titulos-filtro">Marca 3</a>
-                    <a href="#" class="nav-link mb-2 titulos-filtro">Marca 4</a>
-                    <a href="#" class="nav-link d-flex justify-content-between mb-2 "><span>MODELO</span></a>
-                    <div class="nav nav-pills flex-column ml-3">
-                        <a href="#" class="nav-link mb-2 titulos-filtro">Modelo 1</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">Modelo 2</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">Modelo 3</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">Modelo 4</a>
-                    </div>
-                    <a href="#" class="nav-link d-flex justify-content-between mb-2"><span>PRECIO</span></a>
-                    <div class="nav nav-pills flex-column ml-3">
-                        <a href="#" class="nav-link mb-2 titulos-filtro">1000-1999</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">2000-2999</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">3000-3999</a>
-                        <a href="#" class="nav-link mb-2 titulos-filtro">4000-10000</a>
-                    </div>
-                    <a href="#" class="nav-link d-flex justify-content-between mb-2"><span>COLORES</span></a>
-                    <div class="nav nav-pills flex-column ml-3">
-                    <a href="#" class="btn btn-success ml-3 mr-3">Verde</a>
-                    <a href="#" class="btn btn-danger ml-3 mr-3">Rojo</a>
-                    <a href="#" class="btn btn-primary ml-3 mr-3">Azul</a>
-                    <a href="#" class="btn btn-warning ml-3 mr-3">Amarillo</a>
-                    <a href="#" class="btn btn-light ml-3 mr-3">Blanco</a>
-                    <a href="#" class="btn btn-dark ml-3 mr-3">Negro</a>
-                    </div>
-                    
-
-
-                    
-
-                </div>
-            </div>
-            <div class="col-10 productos">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="col-md-12">
-                        <div class="card-deck text-center col-md-10 mt-4">
-                            <div class=" col-lg-4 col-md-6">
-                                <div class="card">
-                                    <img src="images/imagen 2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra RX400</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>    
                                 </div>
                             </div>
-                            <div class=" col-lg-4 col-md-6">
-                                <div class="card">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Precio
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Color
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    
+                    <div class="col-lg-12">
+                        <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
                                     <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Guitarra M547</h5>
@@ -121,10 +131,10 @@ and open the template in the editor.
                                         <p>$4500</p>
                                         <a href="#">Ver más</a>
                                     </div>
-                                </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card">
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card">
                                     <img src="images/imagen 5.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Guitarra MGLE</h5>
@@ -132,10 +142,10 @@ and open the template in the editor.
                                         <p>$4500</p>
                                         <a href="#">Ver más</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
+                                </div> 
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
                                     <img src="images/imagen 2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Guitarra RX400</h5>
@@ -144,302 +154,31 @@ and open the template in the editor.
                                         <a href="#">Ver más</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 mt-3">
-                                <div class="card">
-                                    <img src="images/imagen 3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guitarra M547</h5>
-                                        <span>Precio</span>
-                                        <p>$4500</p>
-                                        <a href="#">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
-                    </div>
-
-
+                            <div class="col-lg-4 mt-3">
+                              <div class="card">
+                                    <img src="images/imagen 4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Guitarra M547</h5>
+                                        <span>Precio</span>
+                                        <p>$4500</p>
+                                        <a href="#">Ver más</a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                
+                            </div>
+                        </d
+                    </div>   
+                    
                 </div>
             </div>
         </div>
+    </div>
 
 
 
@@ -448,60 +187,43 @@ and open the template in the editor.
 
 
 
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center mt-4">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                </li>
-            </ul>
-        </nav>
-
-
-
-        <footer class="bg-dark text-white">
-            <div class="col-lg-12 p-3 mb-2text-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="col-lg-12 text-center">
-                                <h6 class="lead">TIENDA MUSICAL</h6>    
-                            </div>
-                            <div class="col-lg-12 col-md-12 text-center">
-                                <img src="images/emai.png" width="120" height="70" alt="">    
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <h6 class="lead">CONOCENOS</h6>
-                            </div>
-
+    <footer class="bg-dark text-white">
+        <div class="col-lg-12 p-3 mb-2text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-12 text-center">
+                            <h6 class="lead">TIENDA MUSICAL</h6>    
                         </div>
-                        <div class="col-lg-4 text-center">
-                            <h6 class="lead">ACERCA DE</h6>
-                            <p class="blockquote-footer">Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
+                        <div class="col-lg-12 col-md-12 text-center">
+                            <img src="images/emai.png" width="120" height="70" alt="">    
                         </div>
-                        <div class="col-lg-4 text-center">
-                            <H6 class="lead">Contactanos</H6>
-
-                            <p><a href="https://www.facebook.com/tiendaemai"><span class="fa fa-facebook-square mr-2" style='color:white'></span></a>Facebook</p>
-
-                            <p><span class="fa fa-phone mr-2" ></span>38-4-34-67</p>
-                            <p><span class="fa fa-map-marker mr-2"></span>Centro Tehuacan</p>
+                        <div class="col-lg-12 text-center">
+                            <h6 class="lead">CONOCENOS</h6>
                         </div>
+
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h6 class="lead">ACERCA DE</h6>
+                        <p class="blockquote-footer">Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <H6 class="lead">Contactanos</H6>
+
+                        <p><a href="https://www.facebook.com/tiendaemai"><span class="fa fa-facebook-square mr-2" style='color:white'></span></a>Facebook</p>
+
+                        <p><span class="fa fa-phone mr-2" ></span>38-4-34-67</p>
+                        <p><span class="fa fa-map-marker mr-2"></span>Centro Tehuacan</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
-    </body>
+</body>
 </html>
