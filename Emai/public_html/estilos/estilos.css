@@ -82,11 +82,15 @@
     transition: all .5s
 }
 .titulos-filtro{
-    transition: all .5s
+    transition: all .5s;
+        color: black;
 }
 .titulos-filtro:hover {
      background-color: black;
     color: white;
     transition: all .5s 
+}
+.filtro-productos{
+    background-color: #f1f1f1;
 }
 
