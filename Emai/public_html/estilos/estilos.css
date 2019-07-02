@@ -60,9 +60,75 @@
     height: 550px;
     
 }
+<<<<<<< HEAD
 .navbar-toggler {
     border-color: rgb(255,255,255);
 } 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+=======
+.navbar{
+    height: 65px;
+}
+.formulario-admin .img-fluid{
+    height: 100px;
+}
+
+.agregar-noticia a{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color:#eeeeee; 
+    text-decoration: none;
+    color: #888888;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all .5s
+}
+.agregar-noticia a:hover {
+    background-color: #e43c5c;
+    color: white;
+    transition: all .5s
+}
+.producto-catalogo a{
+  display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color:#eeeeee; 
+    text-decoration: none;
+    color: #888888;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all .5s  
+}
+.productos a{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color:#eeeeee; 
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all .5s
+}
+.productos a:hover {
+    background-color: black;
+    color: white;
+    transition: all .5s
+}
+.titulos-filtro{
+    transition: all .5s;
+        color: black;
+}
+.titulos-filtro:hover {
+     background-color: black;
+    color: white;
+    transition: all .5s 
+}
+.filtro-productos{
+    background-color: #f1f1f1;
+}
+
+>>>>>>> 627b29fd83a06aa8b11d74be58b5d1c3d1b3118f
