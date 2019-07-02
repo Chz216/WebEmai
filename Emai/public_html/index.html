@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>EMAI</title>
@@ -12,51 +7,42 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
     </head>
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <nav class="navbar navbar-light bg-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/emai.png" width="110" height="55" alt="">
-
-                </a>
-            </nav>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <body>    
+        <nav class="navbar navbar-expand-lg bg-black">
+            <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link vavbar-dark" href="index.html">INICIO<span class="sr-only">(current)</span></a>
-                    </li>
-                   <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="catalogo.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          CATALOGO
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="catalogo.html">Cuerda</a>
-          <a class="dropdown-item" href="catalogo.html">Percuisión</a>
-          <a class="dropdown-item" href="catalogo.html">Viento</a>
-        </div>
-      </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link vavbar-dark" href="contacto.html">CONTACTO<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <div class="input-group col-lg-4">
-                    <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
+              <ul class="navbar-nav mr-4">  
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactanos</a>
+                  </li>
+              </ul>
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar Productos...">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                      <button class="btn btn-danger" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
                     </div>
-                </div>
-
+                  </div>
+                </form>
             </div>
-        </nav>
-
+            </div>
+          </nav>          
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
