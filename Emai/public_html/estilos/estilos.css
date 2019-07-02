@@ -168,3 +168,11 @@
 .slogan-imagen  .img-fluid{
     height: 400px;
 }
+.detalles .imagen-producto-detalle .col-md-4 .img-fluid {
+    height: 170px;
+    
+}
+.detalles .imagen-principal .img-fluid{
+    height: 400px;
+    align-content: center;
+}
