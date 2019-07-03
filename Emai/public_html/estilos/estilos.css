@@ -9,16 +9,6 @@
     color: rgb(194, 12, 12);
 }
 
-.navbar-brand{
-    color: rgb(255,255,255);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 25px;
-}
-
-.navbar-brand:hover{
-    color: rgb(255,255,255);
-}
-
 .bg-black{
     background-color: rgb(0,0,0);
 }
@@ -32,6 +22,39 @@
 
 .form-control{
     font-family: 'Poppins', sans-serif;
+}
+
+.dropdown{
+    position: static;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu h5{
+    margin: 0 20px;
+}
+
+.dropdown-menu .dropdown-item{
+    padding: 10px;
+    margin: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(0,0,0,.5);
+    border-radius: 2px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    top: 90%;
+    border-radius: 0px;
 }
 
 .slogan{
@@ -125,8 +148,7 @@
 }
 .filtro-productos{
     background-color: #f1f1f1;
-<<<<<<< HEAD
-=======
+
 }
 .productos-catalogo a{
      display: inline-block;
@@ -177,5 +199,4 @@
 .detalles .imagen-principal .img-fluid{
     height: 400px;
     align-content: center;
->>>>>>> bf10e5ba4fa019269cd4e80acf9f9a6cdd56475c
 }
