@@ -1,3 +1,14 @@
+<?php
+include_once './backend/modelo/BD.php';
+include_once './backend/modelo/MFormulario.php';
+include_once './backend/controlador/CFormulario.php';
+$cFormulario = new CFormulario();
+
+
+if(isset($_POST["nombre"]) && isset($_POST["correo"]) && isset($_POST["texto"])){
+    $cFormulario->subirFormulario($_POST["nombre"], $_POST["telefono"], $_POST["asunto"], $_POST["texto"]);
+}
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
