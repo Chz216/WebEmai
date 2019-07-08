@@ -200,6 +200,6 @@
     height: 400px;
     align-content: center;
 }
-.eventos .imagen-evento{
-    
+.eventos .imagen-evento .img-fluid{
+    height: 450px;
 }
