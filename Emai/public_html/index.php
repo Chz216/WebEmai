@@ -21,13 +21,10 @@ $cRecital  = new CRecital();
     </head>
     <body>    
         <nav class="navbar navbar-expand-lg bg-black">
-            
             <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
               <span class="navbar-toggler-icon"></span>
-              
             </button>
-            
             <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
               <ul class="navbar-nav mr-4">  
                 <li class="nav-item">
