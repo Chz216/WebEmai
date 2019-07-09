@@ -1,3 +1,17 @@
+<?php 
+include_once '../backend/modelo/BD.php';
+include_once '../backend/modelo/MAdmin.php';
+include_once '../backend/modelo/MNoticias.php';
+include_once '../backend/controlador/CAdmin.php';
+include_once '../backend/controlador/CNoticia.php';
+
+$admin = new CAdmin();
+$noticia = new CNoticia();
+session_start();
+if (!isset($_SESSION["autentificado"])){
+     header("Location: panelAdmin.php");
+}
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.

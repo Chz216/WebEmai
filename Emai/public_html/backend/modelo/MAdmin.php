@@ -12,11 +12,11 @@
  * @author melissaMay
  */
 class MAdmin  extends BD{
-    public function consultarUsuario($nombre_usuario,$password){
+    public function consultarUsuario($usuario,$password){
         try {
             $pass= md5($password);
-            $stmt = $this->conn->prepare("select * from nombre_usuario where nombre_usuario=:nombre_usuario and password=:password");
-            $stmt->bindParam(":nombre_usuario", $usuario);
+            $stmt = $this->conn->prepare("select * from usuario where usuario=:usuario and password=:password");
+            $stmt->bindParam(":usuario", $usuario);
             $stmt->bindParam(":password", $password);
             $stmt->execute();
             foreach ($stmt->fetchAll() as $reg) {

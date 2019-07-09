@@ -4,10 +4,9 @@ include_once '../backend/modelo/MAdmin.php';
 include_once '../backend/controlador/CAdmin.php';
 $admin = new CAdmin();
 session_start();
-if( isset($_POST["nombre_usuario"]) && isset($_POST["password"])){
-$admin->validarUsuario($_POST["nombre_usuario"], $_POST["password"]);    
+if( isset($_POST["usuario"]) && isset($_POST["password"])){
+$admin->validarUsuario($_POST["usuario"], $_POST["password"]);    
 }
-
 if (isset($_SESSION["autentificado"])){
      header("Location: panelAdmin.php");
 }
@@ -40,7 +39,7 @@ and open the template in the editor.
                             <img alt="" class="img-fluid" src="images/emai 2.png">
                         </div>
                         <h1 class="display-4">Administrador</h1>
-                        <form method="post" action="index.php">
+                        <form method="post" action="loggin.php">
                              <div class="input-group mt-3" id="usuario">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
@@ -55,7 +54,7 @@ and open the template in the editor.
                                         <i class="fa fa-key mx-auto"></i>
                                     </div>
                                 </div>
-                                <input type="password" name="clave" class="form-control" placeholder="Contraseña" required="">
+                                <input type="password" name="password" class="form-control" placeholder="Contraseña" required="">
                             </div>
                            
                             <button type="submit" class="btn btn-success col-12 mt-3 mb-5">Entrar</button>

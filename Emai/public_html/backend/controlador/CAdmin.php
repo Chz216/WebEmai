@@ -19,10 +19,10 @@ class CAdmin {
     }
     
     
-    public function validarUsuario($nombre_usuario, $password){
-        $usuario=$this->modelo->consultarUsuario($nombre_usuario, $password);
+    public function validarUsuario($usuario, $password){
+        $usuario=$this->modelo->consultarUsuario($usuario, $password);
         if(isset($usuario)){
-          $_SESSION["autentificado"] = $nombre_usuario;
+          $_SESSION["autentificado"] = $usuario;
           header("Location: loggin.php");
         }else{
             echo "<br><br><br><br><h1>Usuario incorrecto</h1>";

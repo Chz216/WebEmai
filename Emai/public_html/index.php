@@ -2,12 +2,9 @@
 include_once './backend/modelo/BD.php';
 include_once './backend/modelo/MProducto.php';
 include_once './backend/modelo/MNoticias.php';
-include_once './backend/modelo/MRecital.php';
 include_once './backend/controlador/CNoticia.php';
 include_once './backend/controlador/CProducto.php';
-include_once './backend/controlador/CRecital.php';
 $cProducto = new CProducto();
-$cRecital = new CRecital();
 $cNoticia = new CNoticia();
 ?>
 <!DOCTYPE html>

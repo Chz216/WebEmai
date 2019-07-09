@@ -1,4 +1,3 @@
-
 <?php 
 include_once '../backend/modelo/BD.php';
 include_once '../backend/modelo/MAdmin.php';
@@ -9,15 +8,14 @@ include_once '../backend/controlador/CAdmin.php';
 include_once '../backend/controlador/CFormulario.php';
 include_once '../backend/controlador/CNoticia.php';
 include_once '../backend/controlador/CProducto.php';
-include_once '../backend/controlador/CRecital.php';
+
 $admin = new CAdmin();
 $noticia = new CNoticia();
 $formulario = new CFormulario();
 $producto = new CProducto();
-$recital = new CRecital();
 session_start();
 if (!isset($_SESSION["autentificado"])){
-     header("Location: loggin.php");
+     header("Location: panelAdmin.php");
 }
 
 ?>
@@ -44,7 +42,7 @@ and open the template in the editor.
             <div class="container">
                 <div class="row">
                     <div class="nombre mt-3">
-                    <h1 class="align-middle">Bienvenido Usuario</h1>
+                    <h1 class="align-middle">Bienvenido <?php echo $_SESSION["autentificado"]["usuario"] ?></h1>
                     <h2>SECCIÓN PRODUCTOS</h2>
                     </div>
                 </div>
@@ -60,9 +58,6 @@ and open the template in the editor.
                 </div>
             </div>
     </div>
-       
-        
-        
         <div class="col-lg-12 mt-3">
             <div class="container">
         <table class="table table-striped text-center">
