@@ -25,7 +25,6 @@ $cRecital  = new CRecital();
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div>logo</div>
             <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
               <ul class="navbar-nav mr-4">  
                 <li class="nav-item">
