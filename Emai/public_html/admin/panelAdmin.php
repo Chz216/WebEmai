@@ -1,3 +1,27 @@
+
+<?php 
+include_once '../backend/modelo/BD.php';
+include_once '../backend/modelo/MAdmin.php';
+include_once '../backend/modelo/MFormulario.php';
+include_once '../backend/modelo/MNoticias.php';
+include_once '../backend/modelo/MProducto.php';
+include_once '../backend/controlador/CAdmin.php';
+include_once '../backend/controlador/CFormulario.php';
+include_once '../backend/controlador/CNoticia.php';
+include_once '../backend/controlador/CProducto.php';
+include_once '../backend/controlador/CRecital.php';
+$admin = new CAdmin();
+$noticia = new CNoticia();
+$formulario = new CFormulario();
+$producto = new CProducto();
+$recital = new CRecital();
+session_start();
+if (!isset($_SESSION["autentificado"])){
+     header("Location: loggin.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -15,12 +39,13 @@ and open the template in the editor.
         <link href="../estilos/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        
         <div class="col-lg-12">
             <div class="container">
                 <div class="row">
                     <div class="nombre mt-3">
                     <h1 class="align-middle">Bienvenido Usuario</h1>
-                    <h2>SECCIÓN NOTICIAS</h2>
+                    <h2>SECCIÓN PRODUCTOS</h2>
                     </div>
                 </div>
             </div>
@@ -29,7 +54,7 @@ and open the template in the editor.
         <div class="col-lg-12 ">
             <div class="container">
                 <div class="row">
-                    <a href="#">Agregar noticia &nbsp<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                    <a href="#">Agregar producto &nbsp<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                 </div>
    
                 </div>
@@ -52,33 +77,33 @@ and open the template in the editor.
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Noticia 1</td>
-      <td> <a href="editarProducto.html"><i class="fa fa-pencil-square-o"></i></a></td>
-      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+      <td>Guitarra</td>
+      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Noticia 2</td>
-     <td> <a href="editarProducto.html"><i class="fa fa-pencil-square-o"></i></a></td>
-      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+      <td>Violin</td>
+     <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Noticia 3</td>
-     <td> <a href="editarProducto.html"><i class="fa fa-pencil-square-o"></i></a></td>
-      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+      <td>Guitarra</td>
+      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
     </tr>
      <tr>
       <th scope="row">4</th>
-      <td>Noticia 4</td>
-      <td> <a href="editarProducto.html"><i class="fa fa-pencil-square-o"></i></a></td>
-      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+      <td>Bajo</td>
+      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
     </tr>
      <tr>
       <th scope="row">5</th>
-      <td>Noticia 5</td>
-     <td> <a href="editarProducto.html"><i class="fa fa-pencil-square-o"></i></a></td>
-      <td><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+      <td>Amplificador</td>
+      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
     </tr>
   </tbody>
 </table>
