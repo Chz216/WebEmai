@@ -36,73 +36,109 @@ and open the template in the editor.
         <link href="../estilos/font-awesome.css" rel="stylesheet" type="text/css"/>
         <link href="../estilos/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        
-        <div class="col-lg-12">
-            <div class="container">
-                <div class="row">
-                    <div class="nombre mt-3">
-                    <h1 class="align-middle">Bienvenido <?php echo $_SESSION["autentificado"]["usuario"] ?></h1>
-                    <h2>SECCIÓN PRODUCTOS</h2>
+    <body class="panel-admin">
+                <div class="container">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar">
+
+                        <div class="profile-userpic text-center">
+                            <img src="https://picsum.photos/290/200?random=5" class="img-responsive" alt="">
+                        </div>
+
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                Usuario
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Administrador
+                            </div>
+                        </div>
+
+                        <div class="profile-userbuttons">
+
+                            <button type="button" class="btn btn-danger btn-sm">Salir</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="profile-content">
+                        <div class="col-lg-12">
+                            <div class="container">
+                                <div class="row">
+
+
+
+                                    <div class="col-md-6">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://picsum.photos/650/940?random=13"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://picsum.photos/650/540?random=2" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Productos</h2>
+                                                <div class="icon-block">
+                                                     <a href="#"><i class="fa fa-plus"></i></a>
+                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://picsum.photos/650/940?random=6"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Eventos</h2>
+                                                <div class="icon-block">
+                                                     <a href="#"><i class="fa fa-plus"></i></a>
+                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  <div class="col-md-6">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://picsum.photos/650/940?random=11"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://picsum.photos/650/540?random=4" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Carrusel</h2>
+                                                <div class="icon-block">
+                                                     <a href="#"><i class="fa fa-plus"></i></a>
+                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="agregar-noticia">
-        <div class="col-lg-12 ">
-            <div class="container">
-                <div class="row">
-                    <a href="#">Agregar producto &nbsp<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                </div>
-   
-                </div>
-            </div>
-    </div>
-        <div class="col-lg-12 mt-3">
-            <div class="container">
-        <table class="table table-striped text-center">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Editar</th>
-      <th scope="col">Eliminar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Guitarra</td>
-      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Violin</td>
-     <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Guitarra</td>
-      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
-    </tr>
-     <tr>
-      <th scope="row">4</th>
-      <td>Bajo</td>
-      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
-    </tr>
-     <tr>
-      <th scope="row">5</th>
-      <td>Amplificador</td>
-      <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-      <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
-    </tr>
-  </tbody>
-</table>
-        </div>
-    </div>
+    <center>
+        <strong>Tienda de Música <a href="http://emai.com" target="_blank">Emai</a></strong>
+    </center>
+
     </body>
 </html>
