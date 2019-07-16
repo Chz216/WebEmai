@@ -21,11 +21,6 @@ if (!isset($_SESSION["autentificado"])){
 ?>
 
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Administrador</title>
@@ -43,7 +38,7 @@ and open the template in the editor.
                     <div class="profile-sidebar">
 
                         <div class="profile-userpic text-center">
-                            <img src="https://picsum.photos/290/200?random=5" class="img-responsive" alt="">
+                            <h1> <i class="fa fa-user-circle" aria-hidden="true"></i></h1>
                         </div>
 
                         <div class="profile-usertitle">
@@ -67,9 +62,6 @@ and open the template in the editor.
                         <div class="col-lg-12">
                             <div class="container">
                                 <div class="row">
-
-
-
                                     <div class="col-md-6">
                                         <div class="card profile-card-3">
                                             <div class="background-block">
