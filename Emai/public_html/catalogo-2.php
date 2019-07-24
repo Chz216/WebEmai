@@ -113,11 +113,11 @@ and open the template in the editor.
                     
                     <div class="col-lg-12 text-center">
                         <div class="row">
-                        <?php echo $cProducto->Instrumentos()?>    
+                        <?php echo $cProducto->Instrumentos2()?>    
                         </div>
                         <div class="col-lg-12">
                             <nav aria-label="Page navigation example">
-           <ul class="pagination justify-content-center mt-4">
+            <ul class="pagination justify-content-center mt-4">
                 <li class="page-item disabled">
                     <a class="page-link" href="catalogo.php" tabindex="-1" aria-disabled="true">Anterior</a>
                 </li>

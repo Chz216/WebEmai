@@ -1,5 +1,12 @@
-
-
+<?php
+include_once './backend/modelo/BD.php';
+include_once './backend/modelo/MProducto.php';
+include_once './backend/modelo/MNoticias.php';
+include_once './backend/controlador/CNoticia.php';
+include_once './backend/controlador/CIndex.php';
+$cIndex = new CIndex();
+$cNoticia = new CNoticia();
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -8,7 +15,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Emai</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -18,82 +25,14 @@ and open the template in the editor.
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-black">
-            <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
+            <a class="navbar-brand" href="index.php "><img src="images/log_emai.png" alt="navbar" width="110px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
               <ul class="navbar-nav mr-4">  
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mega-menu" data-toggle="dropdown">
-                      Productos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="mega-menu">
-                      <div class="row">
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Cuerda</h5>
-                          <a class="dropdown-item" href="catalogo.html">Percusion</a>
-                          <a class="dropdown-item" href="#">Cuerda</a>
-                          <a class="dropdown-item" href="#">Viento</a>
-                          <a class="dropdown-item" href="#">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Viento</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Percusión</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos Idíofonos</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos Eléctricos</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Audio e Iluminación</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Accesorios</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="eventos.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contactanos</a>
-                  </li>
+<!--                 Falta reacomodar -->
+                  <?php echo $cIndex->MenuInstrumentos()?>
               </ul>
                 <form class="navbar-form" role="search">
                   <div class="input-group">
@@ -108,205 +47,14 @@ and open the template in the editor.
             </div>
             </div>
         </nav>
-
     <div class="col-lg-12 noticias mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        
-                                        <img src="images/imagen 2.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 3.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 4.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 5.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 2.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 3.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 4.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 5.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 2.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 3.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 3.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-6 col-md-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/imagen 4.jpg" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
+                        
+                        <?php echo $cNoticia->Noticias() ?>
                     </div>
                 </div> 
 

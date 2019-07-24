@@ -16,6 +16,12 @@ class BD {
             echo "Connection failed: " . $e->getMessage();
         }
     }
+    function desconectar(){
+	global $conexion;
+	mysql_close($conexion);
+}
+
+
 
   
  }

@@ -4,112 +4,66 @@ include_once './backend/modelo/MProducto.php';
 include_once './backend/modelo/MNoticias.php';
 include_once './backend/controlador/CNoticia.php';
 include_once './backend/controlador/CProducto.php';
+include_once './backend/controlador/CIndex.php';
 $cProducto = new CProducto();
 $cNoticia = new CNoticia();
+$cIndex = new CIndex();
+
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EMAI</title>
+        <title>Emai</title>
+        <meta charset="UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
+          <script src="scripts/scripts.js" type="text/javascript"></script>
     </head>
     <body>    
         <nav class="navbar navbar-expand-lg bg-black">
-            <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
+            <a class="navbar-brand" href="index.php "><img src="images/log_emai.png" alt="navbar" width="110px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
-                <ul class="navbar-nav mr-4">  
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="mega-menu" data-toggle="dropdown">
-                            Productos
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="mega-menu">
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Instrumentos de Cuerda</h5>
-                                    <a class="dropdown-item" href="catalogo.html">Percusion</a>
-                                    <a class="dropdown-item" href="#">Cuerda</a>
-                                    <a class="dropdown-item" href="#">Viento</a>
-                                    <a class="dropdown-item" href="#">Audio</a>
-                                </div>
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Instrumentos de Viento</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Instrumentos de Percusión</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Instrumentos Idíofonos</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Instrumentos Eléctricos</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Audio e Iluminación</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                                <div class="col-sm-3 col-lg-3">
-                                    <h5>Accesorios</h5>
-                                    <a href="#" class="dropdown-item">Percusion</a>
-                                    <a href="#" class="dropdown-item">Cuerda</a>
-                                    <a href="#" class="dropdown-item">Viento</a>
-                                    <a href="#" class="dropdown-item">Audio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="eventos.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contactanos</a>
-                    </li>
-                </ul>
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar Productos...">
-                        <div class="input-group-append">
-                            <button class="btn btn-danger" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
+              <ul class="navbar-nav mr-4">  
+<!--                 Falta reacomodar -->
+                  <?php echo $cIndex->MenuInstrumentos()?>
+              </ul>
+                <form class="navbar-form" role="search" method="post" >
+                  <div class="input-group">
+                    <input  type="text" name="busqueda" id="busqueda" value="" placeholder="Buscar Productos..." maxlength="30" autocomplete="off" onKeyUp="buscar();">
+                    <div class="input-group-append" id="resultadoBusqueda">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
                     </div>
+                  </div>
                 </form>
+<script>
+$(document).ready(function() {
+    $("#resultadoBusqueda").php('<p>JNo se encontraron resultados</p>');
+});
+
+function buscar() {
+    var textoBusqueda = $("input#busqueda").val();
+ 
+     if (textoBusqueda != "") {
+        $.post("buscar.php", {valorBusqueda: textoBusqueda}, function(mensaje) {
+            $("#resultadoBusqueda").php(mensaje);
+         }); 
+     } else { 
+        $("#resultadoBusqueda").php('<p>JNo se encontraron resultados</p>');
+        };
+};
+</script>
             </div>
-        </div>
-    </nav>          
+            </div>
+        </nav>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -183,11 +137,6 @@ $cNoticia = new CNoticia();
             </div> 
         </div>
     </div>
-</div>
-
-
-
-
 <div class="vision-mision">
     <div class="vision mt-3 mb-4 mt-5"> 
         <div class="col-lg-12">

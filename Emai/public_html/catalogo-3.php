@@ -113,7 +113,7 @@ and open the template in the editor.
                     
                     <div class="col-lg-12 text-center">
                         <div class="row">
-                        <?php echo $cProducto->Instrumentos()?>    
+                        <?php echo $cProducto->Instrumentos3()?>    
                         </div>
                         <div class="col-lg-12">
                             <nav aria-label="Page navigation example">

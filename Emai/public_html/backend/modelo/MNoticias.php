@@ -23,4 +23,14 @@ class MNoticias extends BD {
         } 
     }
     
+    public function consultarNoticias(){
+       try {
+            $stmt = $this->conn->prepare("SELECT * FROM noticia order by id_noticia ");
+            $stmt->execute();
+            return $stmt->fetchAll();
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        } 
+    }
+    
         }

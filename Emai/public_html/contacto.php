@@ -1,10 +1,11 @@
 <?php
 include_once './backend/modelo/BD.php';
 include_once './backend/modelo/MFormulario.php';
+include_once './backend/modelo/MProducto.php';
 include_once './backend/controlador/CFormulario.php';
+include_once './backend/controlador/CIndex.php';
+$cIndex = new CIndex();
 $cFormulario = new CFormulario();
-
-
 if(isset($_POST["nombre"]) && isset($_POST["correo"]) && isset($_POST["texto"])){
     $cFormulario->subirFormulario($_POST["nombre"], $_POST["telefono"], $_POST["asunto"], $_POST["texto"]);
 }
@@ -17,7 +18,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>EMAI</title>
+        <title>Emai</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -26,83 +27,15 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-black">
-            <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
+     <nav class="navbar navbar-expand-lg bg-black">
+            <a class="navbar-brand" href="index.php "><img src="images/log_emai.png" alt="navbar" width="110px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
               <ul class="navbar-nav mr-4">  
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mega-menu" data-toggle="dropdown">
-                      Productos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="mega-menu">
-                      <div class="row">
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Cuerda</h5>
-                          <a class="dropdown-item" href="catalogo.html">Percusion</a>
-                          <a class="dropdown-item" href="#">Cuerda</a>
-                          <a class="dropdown-item" href="#">Viento</a>
-                          <a class="dropdown-item" href="#">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Viento</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Percusión</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos Idíofonos</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos Eléctricos</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Audio e Iluminación</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                        <div class="col-sm-3 col-lg-3">
-                          <h5>Accesorios</h5>
-                          <a href="#" class="dropdown-item">Percusion</a>
-                          <a href="#" class="dropdown-item">Cuerda</a>
-                          <a href="#" class="dropdown-item">Viento</a>
-                          <a href="#" class="dropdown-item">Audio</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="eventos.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contactanos</a>
-                  </li>
+<!--                 Falta reacomodar -->
+                  <?php echo $cIndex->MenuInstrumentos()?>
               </ul>
                 <form class="navbar-form" role="search">
                   <div class="input-group">
@@ -117,7 +50,6 @@ and open the template in the editor.
             </div>
             </div>
         </nav>
-    
         <div class="col-lg-12 mt-5">
             <div class="container">
                 <div class="row">

@@ -1,12 +1,29 @@
+<?php
+include_once './backend/modelo/BD.php';
+include_once './backend/modelo/MProducto.php';
+include_once './backend/controlador/CProducto.php';
+include_once './backend/controlador/CIndex.php';
+$cIndex = new CIndex();
+$cProducto = new CProducto();
+$id_instrumento = $_GET["id_instrumento"];
+$instrumento= $cProducto->instrumento($id_instrumento);
+$marca=$cProducto->marca($id_instrumento);
+$tipo_inst=$cProducto->tipo_inst($id_instrumento);
+
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
+
+
+
+FALTA 
 -->
 <html>
     <head>
-        <title>EMAI</title>
+        <title>Emai</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -16,123 +33,55 @@ and open the template in the editor.
     </head>
     <body>
       <nav class="navbar navbar-expand-lg bg-black">
-        <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
-          <ul class="navbar-nav mr-4">  
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="mega-menu" data-toggle="dropdown">
-                  Productos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="mega-menu">
-                  <div class="row">
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Instrumentos de Cuerda</h5>
-                      <a class="dropdown-item" href="catalogo.html">Percusion</a>
-                      <a class="dropdown-item" href="#">Cuerda</a>
-                      <a class="dropdown-item" href="#">Viento</a>
-                      <a class="dropdown-item" href="#">Audio</a>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Instrumentos de Viento</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Instrumentos de Percusión</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Instrumentos Idíofonos</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
+            <a class="navbar-brand" href="index.php "><img src="images/log_emai.png" alt="navbar" width="110px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
+              <ul class="navbar-nav mr-4">  
+<!--                 Falta reacomodar -->
+                  <?php echo $cIndex->MenuInstrumentos()?>
+              </ul>
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar Productos...">
+                    <div class="input-group-append">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
                     </div>
                   </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Instrumentos Eléctricos</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Audio e Iluminación</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                      <h5>Accesorios</h5>
-                      <a href="#" class="dropdown-item">Percusion</a>
-                      <a href="#" class="dropdown-item">Cuerda</a>
-                      <a href="#" class="dropdown-item">Viento</a>
-                      <a href="#" class="dropdown-item">Audio</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="eventos.html">Noticias</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contactanos</a>
-              </li>
-          </ul>
-            <form class="navbar-form" role="search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar Productos...">
-                <div class="input-group-append">
-                  <button class="btn btn-danger" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-        </div>
-        </div>
-    </nav>
+                </form>
+            </div>
+            </div>
+        </nav>
         <div class="detalles mt-5">
         <div class="col-lg-12">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 imagen-principal text-center">
-                        <img src="images/imagen 2.jpg" class="img-fluid">
+                        <img src="<?php echo $instrumento["imagen1"]?>" class="img-fluid">
                         <div class="col-lg-12 mt-5 imagen-producto-detalle">
                         <div class="row">
-                            <div class="col-md-4"><img src="images/imagen 2.jpg" class="img-fluid" alt=""/> </div>
+                           <div class="col-md-4"><img src="<?php echo $instrumento["imagen1"]?>" class="img-fluid" alt=""/> </div>
                             
-                            <div class="col-md-4"><img src="images/imagen 3.jpg" class="img-fluid" alt=""/> </div>
+                            <div class="col-md-4"><img src="<?php echo $instrumento["imagen2"]?>" class="img-fluid" alt=""/> </div>
                             
-                            <div class="col-md-4"> <img src="images/imagen 4.jpg" class="img-fluid" alt=""/></div>
+                            <div class="col-md-4"> <img src="<?php echo $instrumento["imagen3"]?>" class="img-fluid" alt=""/></div>
+                            
                         </div>
                     </div>
                     </div>
                     
                     <div  class="col-lg-6 text-justify mt-0 ">
                         <div class="col-lg-12">
-                            <h1 class="mb-4">Modern Jacket</h1>
+                            <h1 class="mb-4"><?php echo $tipo_inst["nombre"]?></h1>
                         </div>
                         <div class="col-lg-12">
                             <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between mb-4">
                 <ul class="list-inline mb-2 mb-sm-0">
-                  <li class="list-inline-item h4 font-weight-light mb-0">$65.00</li>
+                  <li class="list-inline-item h4 font-weight-light mb-0"><?php echo $instrumento["precio"]?></li>
                   <li class="list-inline-item text-muted font-weight-light"> 
-                    <del>$90.00</del>
                   </li>
                 </ul>
                 <div class="d-flex align-items-center">
@@ -147,14 +96,14 @@ and open the template in the editor.
               </div>
                         </div>
                         <div class="col-lg-12">
-                            MODELO
+                        <?php echo $instrumento["modelo"]?>
                         </div>
                         <div class="col-lg-12">
-                            MARCA
+                            <?php echo $marca["marca"]?>
                         </div>
                         <div class="col-lg-12">
                             <p class="">DESCRIPCIÓN</p>
-                            <p class="mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p class="mb-4 text-muted"><?php echo $instrumento["descripcion"]?></p>
                         </div>
                     </div>
 
