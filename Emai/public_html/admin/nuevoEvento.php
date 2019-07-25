@@ -35,15 +35,8 @@ and open the template in the editor.
     <body class="panel-admin">
         <div class="col-lg-12 text-center">
             <h1 class="display-3">Agregar Noticia</h1>
-        </div>
-       
-
-             
-        
-        
-        <div class="col-lg-12 text-center"> 
-                       
-                        
+        </div>     
+        <div class="col-lg-12 text-center">               
             <form method="post" action="nuevoEvento.php" enctype="multipart/form-data">
                             
                             <p class="lead">Foto principal</p>

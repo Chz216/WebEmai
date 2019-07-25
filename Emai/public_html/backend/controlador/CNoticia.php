@@ -119,7 +119,7 @@ class CNoticia {
 
         copy($titulo["titulo"],$imagen["tmp_name"]. "../images/" . $imagen["imagen"],$descripcion["descripcion"]);
         $this->modelo->insertarNoticia($titulo, "images/" . $imagen["imagen"],$descripcion);
-        header("Location: panelAdmin.php");
+        header("Location: panelEventos.php");
     }
     
 }
