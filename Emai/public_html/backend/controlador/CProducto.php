@@ -62,6 +62,33 @@ class CProducto {
         return $acu;
     }
 
+    public function instrumentosAdmin() {
+        $instrumentos = $this->modelo->consultarInstrumentosAdmin();
+        $acu = "";
+        foreach ($instrumentos as $instrumento) {
+            $acu = $acu . '
+                   <div class="col-md-6 mt-3">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="' . $instrumento["imagen2"] . '"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="' . $instrumento["imagen1"] . '" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>' . $instrumento["nombre"] . '</h2>
+                                                <div class="icon-block">
+                                                        <a href="editarProducto.php?id_instrumento='.$instrumento["id_instrumento"].'"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="borrarProducto.php?id_instrumento='.$instrumento["id_instrumento"].'"><i class="fa fa-trash" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                ';
+        }
+        return $acu;
+    }
     public function Instrumentos() {
         $instrumentos = $this->modelo->consultarInstrumentos();
         $acu = "";
@@ -203,6 +230,20 @@ class CProducto {
     public function tipo_inst($id_instrumento){
         $tipo_inst= $this->modelo->consultarTipoInstrumento($id_instrumento);
         return $tipo_inst;
+    }
+         public function subirInstrumento($color,$precio,$descripcion,$imagen,$cantidad){
+        copy($color["color"],$precio["precio"],$descripcion["descripcion"],$imagen["tmp_name"]. "../images/".imagen["imagen"],$cantidad["cantidad"]);
+        $this->modelo->insertarProducto($color,$precio,$descripcion,"images/".$imagen["imagen"], $cantidad);
+        header("Location: panelProductos.php");
+    }
+      public function editarInstrumento($color,$precio,$descripcion,$imagen,$cantidad,$id_producto){
+       copy($color["color"],$precio["precio"],$descripcion["descripcion"],$imagen["tmp_name"]. "../images/".imagen["imagen"],$cantidad["cantidad"],$id_producto["id_producto"]);
+        $this->modelo->editarProducto($color,$precio,$descripcion,"images/".$imagen["imagen"], $cantidad,$id_producto);
+        header("Location: panelProductos.php");
+    }
+    public function borrarInstrumento($id_instrumento){
+        $this->modelo->borrarProducto($id_instrumento);
+        header("Location: panelProductos.php");
     }
 
 }

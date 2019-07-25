@@ -20,7 +20,6 @@ class CIndex {
     
      public function MenuInstrumentos() {
     $instrumentos = $this->modelo->TipoInstrumento();
-    $categoria = $this->modelo->categoria();
         $acu = "";
      foreach ($instrumentos as $instrumento) {
      $acu = $acu . '
@@ -34,28 +33,28 @@ class CIndex {
                     <div class="dropdown-menu" aria-labelledby="mega-menu">
                       <div class="row">
                         <div class="col-sm-3 col-lg-3">
-                          <h5>' . $categoria["categoria"] . '</h5>
+                          <h5>' . $instrumento["categoria"] . '</h5>
                           <a class="dropdown-item" href="catalogo.php">Percusion</a>
                           <a class="dropdown-item" href="#">Cuerda</a>
                           <a class="dropdown-item" href="#">Viento</a>
                           <a class="dropdown-item" href="#">Audio</a>
                         </div>
                         <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Viento</h5>
+                           <h5>' . $instrumento["categoria"] . '</h5>
                           <a href="#" class="dropdown-item">Percusion</a>
                           <a href="#" class="dropdown-item">Cuerda</a>
                           <a href="#" class="dropdown-item">Viento</a>
                           <a href="#" class="dropdown-item">Audio</a>
                         </div>
                         <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos de Percusión</h5>
+                           <h5>' . $instrumento["categoria"] . '</h5>
                           <a href="#" class="dropdown-item">Percusion</a>
                           <a href="#" class="dropdown-item">Cuerda</a>
                           <a href="#" class="dropdown-item">Viento</a>
                           <a href="#" class="dropdown-item">Audio</a>
                         </div>
                         <div class="col-sm-3 col-lg-3">
-                          <h5>Instrumentos Idíofonos</h5>
+                           <h5>' . $instrumento["categoria"] . '</h5>
                           <a href="#" class="dropdown-item">Percusion</a>
                           <a href="#" class="dropdown-item">Cuerda</a>
                           <a href="#" class="dropdown-item">Viento</a>

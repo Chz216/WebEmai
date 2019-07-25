@@ -23,7 +23,7 @@ if (!isset($_SESSION["autentificado"])){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Administrador</title>
+        <title>Administrador  <?php echo $_SESSION["autentificado"]["usuario"] ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -52,7 +52,7 @@ if (!isset($_SESSION["autentificado"])){
 
                         <div class="profile-userbuttons">
 
-                            <button type="button" class="btn btn-danger btn-sm">Salir</button>
+                            <button type="button" href="salir.php" class="btn btn-danger btn-sm">Salir</button>
                         </div>
 
                     </div>
@@ -71,11 +71,11 @@ if (!isset($_SESSION["autentificado"])){
                                                 <img src="https://picsum.photos/650/540?random=2" alt="profile-image" class="profile"/>
                                             </div>
                                             <div class="card-content">
-                                                <h2>Productos</h2>
+                                                <h2><a href="panelProductos.php.php">Productos</a></h2>
                                                 <div class="icon-block">
-                                                     <a href="#"><i class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                    <a href="panelProductos.php"><i class="fa fa-plus"></i></a>
+                                                    <a href="panelProductos.php"><i class="fa fa-pencil-square-o"></i></a>
+                                                    <a href="panelProductos.php"><i class="fa fa-trash" ></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,11 +89,11 @@ if (!isset($_SESSION["autentificado"])){
                                                 <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
                                             </div>
                                             <div class="card-content">
-                                                <h2>Eventos</h2>
+                                                <h2><a href="panelEventos.php">Noticias</a></h2>
                                                 <div class="icon-block">
-                                                     <a href="#"><i class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                     <a href="panelEventos.php"><i class="fa fa-plus"></i></a>
+                                                        <a href="panelEventos.php"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="panelEventos.php"><i class="fa fa-trash" ></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -107,11 +107,11 @@ if (!isset($_SESSION["autentificado"])){
                                                 <img src="https://picsum.photos/650/540?random=4" alt="profile-image" class="profile"/>
                                             </div>
                                             <div class="card-content">
-                                                <h2>Carrusel</h2>
+                                                <h2>Accesorios</h2>
                                                 <div class="icon-block">
-                                                     <a href="#"><i class="fa fa-plus"></i></a>
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
+                                                     <a href="nuevoAccesorio.php"><i class="fa fa-plus"></i></a>
+                                                        <a href="editarAccesorio.php"><i class="fa fa-pencil-square-o"></i></a>
+                                                        <a href="borrarAccesorio.php"><i class="fa fa-trash" ></i></a>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+
+<?php
+include_once '../backend/modelo/BD.php';
+include_once '../backend/modelo/MAdmin.php';
+include_once '../backend/modelo/MProducto.php';
+include_once '../backend/controlador/CAdmin.php';
+include_once '../backend/controlador/CProducto.php';
+$admin = new CAdmin();
+$producto = new CProducto();
+session_start();
+if (!isset($_SESSION["autentificado"])) {
+    header("Location: loggin.php");
+}
+
+if(isset($_POST["color"]) &&  isset($_POST["precio"]) &&  isset($_POST["descripcion"]) && $_FILES["imagen"] &&  isset($_POST["cantidad"])) {
+    $producto->subirProducto($_POST["color"], $_POST["precio"], $_POST["descripcion"], $_FILES["imagen"], $_POST["cantidad"]);
+}
+?><!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -6,7 +23,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Productos</title>
+        <title>Administrador  <?php echo $_SESSION["autentificado"]["usuario"] ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -46,114 +63,8 @@ and open the template in the editor.
                             <div class="container">
                                 <div class="row">
 
-                                    <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=13"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=2" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 1</h2>
-                                                <div class="icon-block">
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=6"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 2</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=20"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=19" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 3</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=16"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=10" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 4</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=15"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=8" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 5</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3 mb-4">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=14"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=7" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Producto 6</h2>
-                                                
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                     <?php echo $cProducto->instrumentosAdmin()?>    
 
                                 </div>
                             </div>

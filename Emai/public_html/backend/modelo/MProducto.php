@@ -37,7 +37,8 @@ class MProducto extends BD {
     
     public function TipoInstrumento(){
      try {
-            $stmt = $this->conn->prepare("SELECT tipoinstrumento.id_tipo_instrumento,id_categoria,categoria from categoria ");
+            $stmt = $this->conn->prepare("SELECT tipoinstrumento.id_tipo_instrumento,id_categoria,categoria from categoria inner join tipoinstrumento "
+                    . "on tipoinstrumento.id_tipo_instrumento=categoria.id_categoria group by id_tipo_instrumento");
             $stmt->execute();
             
             return $stmt->fetchAll();
@@ -50,7 +51,7 @@ class MProducto extends BD {
      try {
 
             $stmt = $this->conn->prepare("SELECT tipoinstrumento.nombre,precio,imagen1,id_instrumento FROM instrumento inner join tipoinstrumento on  tipoinstrumento.id_tipo_instrumento="
-                    . "instrumento.id_instrumento order by id_instrumento asc limit 24");
+                    . "instrumento.id_instrumento order by id_instrumento asc");
             $stmt->execute();
             
             return $stmt->fetchAll();
@@ -151,6 +152,48 @@ class MProducto extends BD {
             echo "Error: " . $e->getMessage();
      
             }    
+    }
+           public function insertarProducto($color,$precio,$descripcion,$imagen,$cantidad) {
+        try {
+            $stmt = $this->conn->prepare("insert into producto (color,precio,descripcion,imagen,cantidad) values(:color,:precio,:descripcion,:imagen,:cantidad)");
+            $stmt->bindParam(":color", $color);
+            $stmt->bindParam(":precio", $precio);
+            $stmt->bindParam(":descripcion", $descripcion);
+            $stmt->bindParam(":imagen", $imagen);
+            $stmt->bindParam(":cantidad", $cantidad);
+            
+            return $stmt->execute();
+            
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
+      public function editarProducto($color,$precio,$descripcion,$imagen,$cantidad,$id_producto) {
+        try {
+            $stmt = $this->conn->prepare("update producto set color=:color,precio=:precio,descripcion=:descripcion,imagen=:imagen,cantidad=:cantidad where id_producto=:id_producto");
+             $stmt->bindParam(":color", $color);
+            $stmt->bindParam(":precio", $precio);
+            $stmt->bindParam(":descripcion", $descripcion);
+            $stmt->bindParam(":imagen", $imagen);
+            $stmt->bindParam(":cantidad", $cantidad);
+            $stmt->bindParam(":id_producto", $id_producto);
+            
+            return $stmt->execute();
+            
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
+    
+      public function borrarProducto($id_producto){
+        try {
+            $stmt = $this->conn->prepare("delete from producto where id_producto=:id_producto");
+            $stmt->bindParam(":id_producto", $id_producto);
+            
+            return $stmt->execute();
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
     }
     
 

@@ -20,7 +20,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Administrador  <?php echo $_SESSION["autentificado"]["usuario"] ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -49,7 +49,9 @@ and open the template in the editor.
 
                         <div class="profile-userbuttons">
 
-                            <button type="button" class="btn btn-danger btn-sm">Salir</button>
+                            <button type="button"  href="salir.php" class="btn btn-danger btn-sm">Salir</button>
+                            <hr>
+                             <a href="nuevoEvento.php">Agregar Noticia &nbsp<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
@@ -60,114 +62,7 @@ and open the template in the editor.
                             <div class="container">
                                 <div class="row">
 
-                                    <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=13"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=2" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 1</h2>
-                                                <div class="icon-block">
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=6"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 2</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=20"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=19" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 3</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=16"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=10" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 4</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=15"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=8" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 5</h2>
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-md-6 mt-3 mb-4">
-                                        <div class="card profile-card-3">
-                                            <div class="background-block">
-                                                <img src="https://picsum.photos/650/940?random=14"/>
-                                            </div>
-                                            <div class="profile-thumb-block">
-                                                <img src="https://picsum.photos/650/540?random=7" alt="profile-image" class="profile"/>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2>Evento 6</h2>
-                                                
-                                                <div class="icon-block">
-                                                     
-                                                        <a href="#"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="#"><i class="fa fa-trash" ></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                     <?php echo $noticia->NoticiasAdmin()?>
 
                                 </div>
                             </div>

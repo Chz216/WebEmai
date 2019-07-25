@@ -45,21 +45,6 @@ $cIndex = new CIndex();
                   </div>
                 </form>
 <script>
-$(document).ready(function() {
-    $("#resultadoBusqueda").php('<p>JNo se encontraron resultados</p>');
-});
-
-function buscar() {
-    var textoBusqueda = $("input#busqueda").val();
- 
-     if (textoBusqueda != "") {
-        $.post("buscar.php", {valorBusqueda: textoBusqueda}, function(mensaje) {
-            $("#resultadoBusqueda").php(mensaje);
-         }); 
-     } else { 
-        $("#resultadoBusqueda").php('<p>JNo se encontraron resultados</p>');
-        };
-};
 </script>
             </div>
             </div>
