@@ -52,7 +52,8 @@ if (!isset($_SESSION["autentificado"])){
 
                         <div class="profile-userbuttons">
 
-                            <button type="button" href="salir.php" class="btn btn-danger btn-sm">Salir</button>
+                            
+                            <a href="salir.php" class="btn btn-danger btn-sm">Salir</a>
                         </div>
 
                     </div>
@@ -73,9 +74,9 @@ if (!isset($_SESSION["autentificado"])){
                                             <div class="card-content">
                                                 <h2><a href="panelProductos.php.php">Productos</a></h2>
                                                 <div class="icon-block">
-                                                    <a href="panelProductos.php"><i class="fa fa-plus"></i></a>
-                                                    <a href="panelProductos.php"><i class="fa fa-pencil-square-o"></i></a>
-                                                    <a href="panelProductos.php"><i class="fa fa-trash" ></i></a>
+                                                    <a href="nuevoProducto.php"><i class="fa fa-plus"></i></a>
+                                                    <a href="editarProducto.php"><i class="fa fa-pencil-square-o"></i></a>
+                                                    <a href="#"><i class="fa fa-trash" ></i></a>
                                                 </div>
                                             </div>
                                         </div>

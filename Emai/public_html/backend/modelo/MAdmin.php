@@ -15,7 +15,7 @@ class MAdmin  extends BD{
     public function consultarUsuario($usuario,$password){
         try {
             $pass= md5($password);
-            $stmt = $this->conn->prepare("select * from usuario where usuario=:usuario and password=:password");
+            $stmt = $this->conn->prepare("select * from usuario where nombre_usuario=:usuario and password=:password");
             $stmt->bindParam(":usuario", $usuario);
             $stmt->bindParam(":password", $password);
             $stmt->execute();
