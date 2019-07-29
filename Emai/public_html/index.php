@@ -47,7 +47,7 @@ $cIndex = new CIndex();
 <script>
 </script>
             </div>
-            </div>
+            
         </nav>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -62,11 +62,11 @@ $cIndex = new CIndex();
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -149,7 +149,7 @@ $cIndex = new CIndex();
 </div>
 
 
-<footer class="bg-dark text-white">
+<footer class="pie text-white">
     <div class="col-lg-12 p-3 mb-2text-white">
         <div class="container">
             <div class="row">
@@ -167,14 +167,16 @@ $cIndex = new CIndex();
                 </div>
                 <div class="col-lg-4 text-center">
                     <h6 class="lead">ACERCA DE</h6>
-                    <p class="blockquote-footer">Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
+                    <p>Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <H6 class="lead">Contáctanos</H6>
+                    
+                    
 
-                    <p><a href="https://www.facebook.com/tiendaemai"><span class="fa fa-facebook-square mr-2" style='color:white'></span></a>Facebook</p>
+                    <p><a href="https://www.facebook.com/tiendaemai"><span class="fa fa-facebook-square mr-2" style='color:white;'></span></a>Facebook</p>
 
-                    <p><span class="fa fa-phone mr-2" ></span>38-4-34-67</p>
+                    <span class="fa fa-phone mr-2" ></span><a href="tel:+340 38-4-34-67" style='color:white;'>38-4-34-67</a>
                     <p><span class="fa fa-map-marker mr-2"></span>Centro Tehuacan</p>
                 </div>
             </div>

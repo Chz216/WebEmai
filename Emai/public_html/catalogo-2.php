@@ -144,7 +144,7 @@ and open the template in the editor.
 
 
 
-    <footer class="bg-dark text-white">
+    <footer class=" text-white">
         <div class="col-lg-12 p-3 mb-2text-white">
             <div class="container">
                 <div class="row">
@@ -162,7 +162,7 @@ and open the template in the editor.
                     </div>
                     <div class="col-lg-4 text-center">
                         <h6 class="lead">ACERCA DE</h6>
-                        <p class="blockquote-footer">Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
+                        <p>Somos una empresa con mas de 5 años de experiencia trabajando en la ciudad de Tehuacan </p>
                     </div>
                     <div class="col-lg-4 text-center">
                         <H6 class="lead">Contactanos</H6>

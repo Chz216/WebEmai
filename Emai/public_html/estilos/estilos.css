@@ -47,6 +47,15 @@
     border-radius: 2px;
 }
 
+#carouselExampleControls a{
+
+    color: #ff6b6b;
+    font-size: 40px;
+}
+#carouselExampleControls a:hover{
+    color: #ee5253;
+    font-size: 40px;
+}
 .dropdown-menu{
     position: absolute;
     width: 100%;
@@ -92,6 +101,9 @@
 
 .formulario-admin .img-fluid{
     height: 100px;
+}
+footer{
+    background-color: black;
 }
 
 .agregar-noticia a{
