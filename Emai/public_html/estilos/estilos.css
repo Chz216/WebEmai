@@ -47,15 +47,6 @@
     border-radius: 2px;
 }
 
-#carouselExampleControls a{
-
-    color: #ff6b6b;
-    font-size: 40px;
-}
-#carouselExampleControls a:hover{
-    color: #ee5253;
-    font-size: 40px;
-}
 .dropdown-menu{
     position: absolute;
     width: 100%;
@@ -75,8 +66,20 @@
     background-size: 100%;
     background-attachment: fixed;
 }
-#carouselExampleControls .carousel-item{
-    height: 500px;
+
+#carouselExampleFade a{
+
+    color: #ff6b6b;
+    font-size: 40px;
+    transition: .5s;
+}
+#carouselExampleFade a:hover{
+    color: #ee5253;
+    font-size: 40px;
+    transition: .5s;
+}
+#carouselExampleFade .carousel-item img{
+    height: 600px;
     
 }
 .titulo{
