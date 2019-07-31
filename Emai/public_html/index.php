@@ -24,7 +24,7 @@ $cIndex = new CIndex();
           <script src="scripts/scripts.js" type="text/javascript"></script>
     </head>
     <body>    
-        <nav class="navbar navbar-expand-lg bg-black">
+        <nav class="navbar navbar-expand-lg bg-black fixed-top">
             <a class="navbar-brand" href="index.php "><img src="images/log_emai.png" alt="navbar" width="110px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
               <span class="navbar-toggler-icon"></span>
