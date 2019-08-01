@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/material-kit.min.css" rel="stylesheet" type="text/css"/>
-        <script src="assets/js/material-kit.min.js" type="text/javascript"></script>
+        
         <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
         <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
         <title>Pruebas</title>
@@ -200,11 +200,7 @@ and open the template in the editor.
                                                                 <i class="fa fa-check-circle" aria-hidden="true"></i>Visión
                                                             </a>
                                                         </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab" aria-selected="false">
-                                                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>Objetivo
-                                                            </a>
-                                                        </li>
+                                                        
                                                     </ul>
                                                 </div>
                                                 <div class="col-lg-12">
@@ -217,9 +213,7 @@ and open the template in the editor.
                                                         <div class="tab-pane" id="schedule-1">
                                                             <p>Nuestra visión es ser la empresa número uno en venta de instrumentos musicales, así como también lograr un mejor sonido y diseños vanguardistas para lograr una mejor imagen en nuestros instrumentos.</p>
                                                         </div>
-                                                        <div class="tab-pane" id="tasks-1">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel distinctio dolores impedit cupiditate debitis iure possimus labore voluptate. Ex, quia, possimus explicabo nihil aut eligendi harum maiores repellat tenetur nulla quam commodi nam nemo eos a porro labore illo fuga laudantium dolore? Itaque, aut quas quaerat inventore eos quo sunt.</p> 
-                                                        </div>
+                                                       
                                                     </div>
                                                 </div>
 

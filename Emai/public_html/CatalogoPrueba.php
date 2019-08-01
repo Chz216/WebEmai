@@ -10,7 +10,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/material-kit.min.css" rel="stylesheet" type="text/css"/>
-        <script src="assets/js/material-kit.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
         <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
         <title>Pruebas</title>
