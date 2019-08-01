@@ -283,7 +283,7 @@ and open the template in the editor.
                                     <h6 class="lead">TIENDA MUSICAL</h6>    
                                 </div>
                                 <div class="col-lg-12 col-md-12 text-center">
-                                    <img src="images/emai.png" width="120" height="70" alt="">    
+                                    <img src="images/log_emai.png" width="110px" alt="">    
                                 </div>
                                 <div class="col-lg-12 text-center">
                                     <h6 class="lead">CONÓCENOS</h6>

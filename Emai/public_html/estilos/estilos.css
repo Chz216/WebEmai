@@ -107,7 +107,7 @@
     height: 100px;
 }
 footer{
-    background-color: #d63031;
+   background: linear-gradient(60deg,#ef5350,#d32f2f);;
 }
 
 .agregar-noticia a{
@@ -414,23 +414,27 @@ footer{
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
 }
 .card-body .btn-primary{
-    background: rgba(214, 48, 49,1.0);
+    background-color: rgba(45, 52, 54,1.0);
 }
 .card-body .btn-primary:hover{
-    background: #2d3436;
+    background: linear-gradient(60deg,#ef5350,#d32f2f);
+    transition: .5s;
 }
 .card-body .btn.btn-primary.focus, .btn.btn-primary:focus, .btn.btn-primary:hover {
     color: #fff;
     background-color: rgba(45, 52, 54,1.0);
+    transition: .4;
     
 }
 
 .card .card-header-rose {
-    box-shadow: none;
+    background: linear-gradient(60deg,#ef5350,#d32f2f);
+
 }
 
 .card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
-    background:  rgba(45, 52, 54,1.0);
+        background: linear-gradient(60deg,#ef5350,#d32f2f);
+
 }
 .row .brand h2{
   text-align: center;
