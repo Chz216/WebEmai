@@ -414,14 +414,14 @@ footer{
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
 }
 .card-body .btn-primary{
-    background: #2d3436;
+    background: rgba(214, 48, 49,1.0);
 }
 .card-body .btn-primary:hover{
-    background: #d63031;
+    background: #2d3436;
 }
 .card-body .btn.btn-primary.focus, .btn.btn-primary:focus, .btn.btn-primary:hover {
     color: #fff;
-    background-color: #d63031;
+    background-color: rgba(45, 52, 54,1.0);
     
 }
 
