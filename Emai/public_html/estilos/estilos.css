@@ -410,14 +410,15 @@ footer{
 
 .nav-pills .nav-item .nav-link.active {
     color: #fff;
-    background-color: #d63031;
+     background: linear-gradient(60deg,#ef5350,#d32f2f);
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
 }
 .card-body .btn-primary{
-    background-color: rgba(45, 52, 54,1.0);
+    
+     background: linear-gradient(60deg,#ef5350,#d32f2f);
 }
 .card-body .btn-primary:hover{
-    background: linear-gradient(60deg,#ef5350,#d32f2f);
+    background-color: rgba(45, 52, 54,1.0);
     transition: .5s;
 }
 .card-body .btn.btn-primary.focus, .btn.btn-primary:focus, .btn.btn-primary:hover {
@@ -444,4 +445,9 @@ footer{
 .row .brand p{
   text-align: center;
   font-size: 45px; 
+}
+.btn.btn-primary.active.focus, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .btn.btn-primary:active.focus, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .open>.btn.btn-primary.dropdown-toggle.focus, .open>.btn.btn-primary.dropdown-toggle:focus, .open>.btn.btn-primary.dropdown-toggle:hover, .show>.btn.btn-primary.dropdown-toggle.focus, .show>.btn.btn-primary.dropdown-toggle:focus, .show>.btn.btn-primary.dropdown-toggle:hover {
+    color: #fff;
+    background: linear-gradient(60deg,#ef5350,#d32f2f);
+    border: none;
 }
