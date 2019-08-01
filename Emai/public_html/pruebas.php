@@ -8,9 +8,9 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="estilos/material-kit.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/material-kit.min.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/material-kit.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/css?family=DM+Sans|Poppins&display=swap" rel="stylesheet">
         <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
         <title>Pruebas</title>
@@ -121,60 +121,59 @@ and open the template in the editor.
         </div>
         <div class="main main-raised mb-5">
             <div class="section section-basic">
+                 <div class="container-fluid px-5px">
+        <div class="row mx-0">
+          <div class="col-md-6 mb-10px px-5px">
+            <div class="card border-0 text-white text-center"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/christopher-campbell-28571-unsplash.adf10dd5.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                  <h2 class="display-3 font-weight-bold mb-4">Top picks</h2><a href="category.html" class="btn btn-light">Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10px px-5px">
+            <div class="card border-0 text-white text-center"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/marco-xu-496929-unsplash.5e18db78.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                  <h2 class="display-3 font-weight-bold mb-4">New arrivals</h2><a href="category.html" class="btn btn-light">Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-lg-4 mb-10px px-5px">
+            <div class="card border-0 text-center text-white"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/benjamin-voros-260869-unsplash.b4e74271.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Jackets</h2><a href="category.html" class="btn btn-link text-white">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+            <div class="card border-0 text-center text-white"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/malvestida-magazine-458585-unsplash.c45232c4.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Lookbook</h2><a href="category.html" class="btn btn-link text-white">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+            <div class="card border-0 text-center text-dark"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/michael-frattaroli-221247-unsplash.02a2e4d8.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Try this</h2><a href="category.html" class="btn btn-link text-dark">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
                 <div class="container">
-                    <div class="col-lg-12 text-center">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p class="h1">Eventos Relevantes</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header card-header-icon card-header-rose">
-                                        <div class="card-icon">
-                                            <i class="material-icons">Titulo evento</i>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
-                                        <button class="btn btn-primary">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header card-header-icon card-header-rose">
-                                        <div class="card-icon">
-                                            <i class="material-icons">Titulo evento</i>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
-
-                                        <button class="btn btn-primary">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header card-header-icon card-header-rose">
-                                        <div class="card-icon">
-                                            <i class="material-icons">Titulo evento</i>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
-
-                                        <button class="btn btn-primary">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
+                   
                     <div class="col-lg-12">
                         <div class="row">
 
@@ -230,43 +229,61 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-12 text-center">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="h1">Productos Destacados</p>
+                                <p class="h1">Eventos Relevantes</p>
                             </div>
-                            <div class="col-lg-4 col-md-4">
+
+                            <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
+                                    <div class="card-header card-header-icon card-header-rose">
+                                        <div class="card-icon">
+                                            <i class="material-icons">Titulo evento</i>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
                                         <button class="btn btn-primary">Ver más</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
+                                    <div class="card-header card-header-icon card-header-rose">
+                                        <div class="card-icon">
+                                            <i class="material-icons">Titulo evento</i>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
+
                                         <button class="btn btn-primary">Ver más</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
+                                    <div class="card-header card-header-icon card-header-rose">
+                                        <div class="card-icon">
+                                            <i class="material-icons">Titulo evento</i>
+                                        </div>
+                                    </div>
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p class="text-justify"> The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...</p>
+
                                         <button class="btn btn-primary">Ver más</button>
                                     </div>
                                 </div>
                             </div>
-                         
+
+
+
                         </div>
                     </div>
-                    
+
+
                 </div>
             </div>
 
@@ -318,12 +335,12 @@ and open the template in the editor.
         <script src="jss/material-kit.min.js" type="text/javascript"></script>
         <script src="jss/plugins/typed.js" type="text/javascript"></script>
         <script>
-        var typed = new Typed(".type", {
-            strings: ["Instrumentos", "Accesorios", "Refacciones", "Sonido", "Iluminación"],
-            typeSpeed: 60,
-            backSpeed: 40,
-            loop: true
-        });
-    </script>
+            var typed = new Typed(".type", {
+                strings: ["Instrumentos", "Accesorios", "Refacciones", "Sonido", "Iluminación"],
+                typeSpeed: 60,
+                backSpeed: 40,
+                loop: true
+            });
+        </script>
     </body>
 </html>
