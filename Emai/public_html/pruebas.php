@@ -121,59 +121,64 @@ and open the template in the editor.
         </div>
         <div class="main main-raised mb-5">
             <div class="section section-basic">
-                 <div class="container-fluid px-5px">
-        <div class="row mx-0">
-          <div class="col-md-6 mb-10px px-5px">
-            <div class="card border-0 text-white text-center"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/christopher-campbell-28571-unsplash.adf10dd5.jpg" alt="Card image" class="card-img">
-              <div class="card-img-overlay d-flex align-items-center"> 
-                <div class="w-100 py-3">
-                  <h2 class="display-3 font-weight-bold mb-4">Top picks</h2><a href="category.html" class="btn btn-light">Shop now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-10px px-5px">
-            <div class="card border-0 text-white text-center"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/marco-xu-496929-unsplash.5e18db78.jpg" alt="Card image" class="card-img">
-              <div class="card-img-overlay d-flex align-items-center"> 
-                <div class="w-100 py-3">
-                  <h2 class="display-3 font-weight-bold mb-4">New arrivals</h2><a href="category.html" class="btn btn-light">Shop now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mx-0">
-          <div class="col-lg-4 mb-10px px-5px">
-            <div class="card border-0 text-center text-white"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/benjamin-voros-260869-unsplash.b4e74271.jpg" alt="Card image" class="card-img">
-              <div class="card-img-overlay d-flex align-items-center"> 
-                <div class="w-100">
-                  <h2 class="display-4 mb-4">Jackets</h2><a href="category.html" class="btn btn-link text-white">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-10px px-5px">
-            <div class="card border-0 text-center text-white"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/malvestida-magazine-458585-unsplash.c45232c4.jpg" alt="Card image" class="card-img">
-              <div class="card-img-overlay d-flex align-items-center"> 
-                <div class="w-100">
-                  <h2 class="display-4 mb-4">Lookbook</h2><a href="category.html" class="btn btn-link text-white">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-10px px-5px">
-            <div class="card border-0 text-center text-dark"><img src="https://d19m59y37dris4.cloudfront.net/sell/1-2-5/img/photo/michael-frattaroli-221247-unsplash.02a2e4d8.jpg" alt="Card image" class="card-img">
-              <div class="card-img-overlay d-flex align-items-center"> 
-                <div class="w-100">
-                  <h2 class="display-4 mb-4">Try this</h2><a href="category.html" class="btn btn-link text-dark">Shop now <i class="fa-arrow-right fa ml-2"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                
                 <div class="container">
-                   
+                          
+                    <div class="col-lg-12 sub-menu">
+                        <div class="row">
+          <div class="col-md-6 mb-10px px-5px">
+            <div class="card border-0 text-white text-center"><img src="images/guitarra.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                  <h2 class="display-3 font-weight-bold mb-4">Guitarras</h2>
+                  <a href="category.html" class="btn btn-light">Ver<i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10px px-5px">
+              <div class="card border-0 text-white text-center"><img src="images/piano.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                  <h2 class="display-3 font-weight-bold mb-4">Pianos</h2><a href="category.html" class="btn btn-light">Ver<i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/bateria.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Baterias</h2><a href="category.html" class="btn btn-light text-white">Ver <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/accesorios.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Accesorios</h2><a href="category.html" class="btn btn-light text-white">Ver <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/refacciones.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Refacciones</h2><a href="category.html" class="btn btn-light text-white">Ver<i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+            </div>
+                         
+        
+      
                     <div class="col-lg-12">
                         <div class="row">
 
