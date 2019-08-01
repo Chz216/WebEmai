@@ -107,7 +107,7 @@
     height: 100px;
 }
 footer{
-    background-color: #C44848;
+    background-color: #d63031;
 }
 
 .agregar-noticia a{
@@ -426,9 +426,18 @@ footer{
 }
 
 .card .card-header-rose {
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(233,30,99,.6);
+    box-shadow: none;
 }
 
 .card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
-    background: linear-gradient(60deg,#F55555,#C24848);
+    background:  rgba(45, 52, 54,1.0);
+}
+.row .brand h2{
+  text-align: center;
+  font-size: 60px; 
+  font-weight: bold;
+}
+.row .brand p{
+  text-align: center;
+  font-size: 45px; 
 }

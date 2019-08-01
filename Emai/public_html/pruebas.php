@@ -110,9 +110,10 @@ and open the template in the editor.
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <div class="brand">
-                            <h1>Tienda de Música Emai</h1>
-                            <h3>Conoce una gran variedad de productos</h3>
+                        <div class="brand">                         
+                            <h2>Escuela Musical de Artes Integrales</h2>
+                            <p><span class="type"></span></p>
+
                         </div>
                     </div>
                 </div>
@@ -315,5 +316,14 @@ and open the template in the editor.
         <script src="jss/core/popper.min.js" type="text/javascript"></script>
         <script src="jss/core/bootstrap-material-design.min.js" type="text/javascript"></script>
         <script src="jss/material-kit.min.js" type="text/javascript"></script>
+        <script src="jss/plugins/typed.js" type="text/javascript"></script>
+        <script>
+        var typed = new Typed(".type", {
+            strings: ["Instrumentos", "Accesorios", "Refacciones", "Sonido", "Iluminación"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
     </body>
 </html>
