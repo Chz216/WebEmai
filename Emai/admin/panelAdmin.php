@@ -2,22 +2,23 @@
 include_once '../backend/modelo/BD.php';
 include_once '../backend/modelo/MAdmin.php';
 include_once '../backend/modelo/MFormulario.php';
-include_once '../backend/modelo/MNoticias.php';
+include_once '../backend/modelo/MEventos.php';
 include_once '../backend/modelo/MProducto.php';
 include_once '../backend/controlador/CAdmin.php';
 include_once '../backend/controlador/CFormulario.php';
-include_once '../backend/controlador/CNoticia.php';
+include_once '../backend/controlador/CEventos.php';
 include_once '../backend/controlador/CProducto.php';
 
 $admin = new CAdmin();
-$noticia = new CNoticia();
+$noticia = new CEventos();
 $formulario = new CFormulario();
 $producto = new CProducto();
+/*
 session_start();
 if (!isset($_SESSION["autentificado"])){
      header("Location: panelAdmin.php");
 }
-
+*/
 ?>
 
 <!DOCTYPE html>

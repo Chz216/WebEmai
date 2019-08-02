@@ -73,6 +73,19 @@ class MProducto extends BD {
         
                }    
        }
+       public function Marca() {
+        try {
+               $stmt = $this->conn->prepare("select * from marca order by id_marca asc"); 
+               $stmt->execute();
+               foreach ($stmt->fetchAll() as $reg) {
+                   return $reg;
+               }
+               return null;
+           } catch (PDOException $e) {
+               echo "Error: " . $e->getMessage();
+        
+               }    
+       }
     public function Marcas() {
         try {
    
