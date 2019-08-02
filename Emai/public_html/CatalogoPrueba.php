@@ -159,46 +159,55 @@ and open the template in the editor.
                                     <h3>Precio</h3>
                                 </div>
                                 <div class="col-lg-12">
-                                <div id="sliderDouble" class="slider slider-rose"></div>
+                                    <div id="sliderDouble" class="slider slider-rose"></div>
                                 </div>
 
 
                                 <div class="title">
                                     <h3>Color</h3>
                                 </div>
+
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Rojo
-                                        <span class="circle">
+                                        <input class="form-check-input" type="checkbox" value=""> Morado
+                                        <span class="form-check-sign">
                                             <span class="check"></span>
                                         </span>
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Verde
-                                        <span class="circle">
+                                        <input class="form-check-input" type="checkbox" value="" > Amarillo
+                                        <span class="form-check-sign">
                                             <span class="check"></span>
                                         </span>
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked="">  Negro
-                                        <span class="circle">
+                                        <input class="form-check-input" type="checkbox" value="" > Negro
+                                        <span class="form-check-sign">
                                             <span class="check"></span>
                                         </span>
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Otros
-                                        <span class="circle">
+                                        <input class="form-check-input" type="checkbox" value="" > Cafe
+                                        <span class="form-check-sign">
                                             <span class="check"></span>
                                         </span>
                                     </label>
-                                </div>  
+                                </div>
+                                <div class="col-lg-12 buscar">
+                                    <button class="btn btn-primary">Buscar</button>
+                                </div>
+
                             </div>
+
+
+
+
                             <div class="col-lg-10 col-md-10 text-center">
                                 <div class="col-lg-12">
                                     <div class="row">
@@ -397,19 +406,19 @@ and open the template in the editor.
             });
 
         </script>
-       
-            <script>
-                var slider2 = document.getElementById('sliderDouble');
 
-noUiSlider.create(slider2, {
-	start: [ 20, 60 ],
-	connect: true,
-	range: {
-		min:  0,
-		max:  100
-	}
-});
-                </script>
+        <script>
+            var slider2 = document.getElementById('sliderDouble');
+
+            noUiSlider.create(slider2, {
+                start: [20, 60],
+                connect: true,
+                range: {
+                    min: 0,
+                    max: 100
+                }
+            });
+        </script>
 
     </body>
 </html>

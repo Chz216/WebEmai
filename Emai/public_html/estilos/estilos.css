@@ -413,7 +413,7 @@ footer{
      background: linear-gradient(60deg,#ef5350,#d32f2f);
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
 }
-.card-body .btn-primary,form .btn-primary {
+.card-body .btn-primary,form .btn-primary,.buscar .btn-primary {
     
      background: linear-gradient(60deg,#ef5350,#d32f2f);
 }
