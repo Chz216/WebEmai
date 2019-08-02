@@ -178,9 +178,10 @@ and open the template in the editor.
                                         <input type="email" class="form-control" id="exampleInput1">
                                         <span class="bmd-help">Correo</span>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Comentario</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                    <div class="form-group bmd-form-group">
+                                        <label for="exampleInput1" class="bmd-label-floating">Introduzca Comentario</label>
+                                        <textarea type="comentario" class="form-control" id="exampleInput1" rows="5"></textarea>
+                                        <span class="bmd-help">Comentario</span>
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <button class="btn btn-primary" type="submit">Enviar</button>
