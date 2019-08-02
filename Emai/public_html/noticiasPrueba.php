@@ -215,7 +215,7 @@ and open the template in the editor.
                                 <div class="section" id="carousel">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-8 mr-auto ml-auto">
+                                            <div class="col-lg-8 col-md-12 col-sm-12 mr-auto ml-auto">
                                                 <div class="card card-raised card-carousel">
                                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                                                         <ol class="carousel-indicators">
@@ -226,27 +226,15 @@ and open the template in the editor.
                                                         <div class="carousel-inner">
                                                             <div class="carousel-item active">
                                                                 <img class="d-block w-100" src="images/comprimida.jpg" alt="First slide">
-                                                                <div class="carousel-caption d-none d-md-block">
-                                                                    <h4>
-                                                                        Yellowstone National Park, United States
-                                                                    </h4>
-                                                                </div>
+                                                               
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <img class="d-block w-100" src="images/comprimida 2.jpg" alt="Second slide">
-                                                                <div class="carousel-caption d-none d-md-block">
-                                                                    <h4>
-                                                                        Somewhere Beyond, United States
-                                                                    </h4>
-                                                                </div>
+                                                               
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <img class="d-block w-100" src="images/comprimida3.jpg" alt="Third slide">
-                                                                <div class="carousel-caption d-none d-md-block">
-                                                                    <h4>
-                                                                        Yellowstone National Park, United States
-                                                                    </h4>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -357,7 +345,7 @@ and open the template in the editor.
                 </div>
 
             </div>
-        </div>
+        
 
 
 
