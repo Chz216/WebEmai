@@ -108,16 +108,57 @@ and open the template in the editor.
                                 <img src="images/imagen 3.jpg" class="zoom"/>
                             </div>
 
-                            <div class="col-md-6 mt-5">
-                                <div class="card">
+                            <div class="col-lg-6 mt-3 text-center">
+                                <h3>
+                                    <small>Nombre del producto</small>
+                                </h3>
+                                
+                                <div class="card card-nav-tabs card-plain">
                                     <div class="card-header card-header-danger">
-                                        <h2 class="card-title text-center">Titulo del Evento</h2>
                                         
+                                        <div class="nav-tabs-navigation">
+                                            <div class="nav-tabs-wrapper">
+                                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active show" href="#home" data-toggle="tab">Caracteristicas<div class="ripple-container"></div></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#updates" data-toggle="tab">Precio<div class="ripple-container"></div></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#history" data-toggle="tab">Imagenes<div class="ripple-container"></div></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, delectus, in, quibusdam quidem exercitationem ad commodi blanditiis magnam tempore laborum numquam itaque consequatur molestias animi sed ab quaerat vel repellendus facilis assumenda unde ea eveniet reprehenderit sint quo eligendi nihil. Quam, laborum, commodi, sit delectus possimus hic ea doloremque esse ipsa nobis atque pariatur molestias reprehenderit harum alias quisquam odit veritatis quas quo in libero impedit veniam consequuntur ducimus mollitia enim amet aut suscipit nam voluptatem illo eligendi vel labore. Voluptatem, mollitia, natus, aliquid deleniti animi sunt quam quisquam perferendis cumque ad repellat ut aliquam totam dolores illum tempore iusto quis est reiciendis optio! Dicta, nemo, illum, aliquid dolorem esse rerum quo necessitatibus laudantium deleniti dolore nostrum laboriosam quidem autem eligendi voluptatibus provident eius illo asperiores nihil tempore blanditiis nobis enim pariatur ab omnis deserunt magni ad expedita dignissimos quaerat labore eum doloribus hic odit neque optio possimus sint architecto.
+                                    <div class="card-body ">
+                                        <div class="tab-content text-center">
+                                            <div class="tab-pane active show" id="home">
+                                                <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                                            </div>
+                                            <div class="tab-pane" id="updates">
+                                                <h1>$1234</h1>
+                                            </div>
+                                            <div class="tab-pane" id="history">
+                                                
+                                                    <div class="row">
+                                                <div class="col-lg-4 imagenes-producto">
+                                                    <img src="images/imagen 5.jpg" alt="..." class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-4 imagenes-producto">
+                                                    <img src="images/imagen 3.jpg" alt="..." class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-4 imagenes-producto">
+                                                    <img src="images/imagen 4.jpg" alt="..." class="img-fluid">
+                                                </div>
+                                            </div>
+                                        
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
