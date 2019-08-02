@@ -15,7 +15,7 @@ and open the template in the editor.
         <title>Pruebas</title>
     </head>
     <body>
-          <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
@@ -117,54 +117,111 @@ and open the template in the editor.
                 <div class="container">
                     <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-lg-2">
-                                <div class="title text-center">
+                            <div class="col-lg-2 col-md-2">
+                                <div class="title">
                                     <h3>Marcas</h3>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"> Marca 1
-                                            <span class="circle">
-                                                <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">Marca 2
-                                            <span class="circle">
-                                                <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3" checked=""> Marca 3
-                                            <span class="circle">
-                                                <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Marca 4
-                                            <span class="circle">
-                                                <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
                                 </div>
-                                <div class="title text-center">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"> Marca 1
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">Marca 2
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked=""> Marca 3
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked=""> Marca 4
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                               
+
+                                <div class="title">
                                     <h3>Precio</h3>
                                 </div>
-                                <div id="sliderRegular" class="slider noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connect" style="left: 0%; right: 53.7386%;"></div><div class="noUi-origin" style="left: 46.2614%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" style="z-index: 4;"></div></div></div></div>
-                           <div class="title text-center">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option4" checked=""> Precios Bajos
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option4" checked=""> Precio Medio
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Precios Altos
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="title">
                                     <h3>Color</h3>
                                 </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Rojo
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Verde
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked="">  Negro
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Otros
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 text-center">
+                            <div class="col-lg-10 col-md-10 text-center">
                                 <div class="col-lg-12">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -173,7 +230,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -182,7 +239,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -191,7 +248,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -200,7 +257,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -209,7 +266,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -218,7 +275,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -227,7 +284,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -236,7 +293,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -245,7 +302,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -254,7 +311,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -263,7 +320,7 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-4 col-md-6">
                                             <div class="card">
                                                 <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
                                                 <div class="card-body">
@@ -342,7 +399,7 @@ and open the template in the editor.
                 </div>
             </footer>
         </div>
-     
+
         <script src="jss/material-kit.min.js" type="text/javascript"></script>
         <script src="jss/core/jquery.min.js" type="text/javascript"></script>
         <script src="jss/core/popper.min.js" type="text/javascript"></script>
@@ -358,17 +415,6 @@ and open the template in the editor.
             });
 
         </script>
-        <script>
-            var slider = document.getElementById('sliderRegular');
 
-            noUiSlider.create(slider, {
-                start: 40,
-                connect: [true, false],
-                range: {
-                    min: 0,
-                    max: 100
-                }
-            });
-        </script>
     </body>
 </html>
