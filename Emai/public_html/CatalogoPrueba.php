@@ -15,7 +15,7 @@ and open the template in the editor.
         <title>Pruebas</title>
     </head>
     <body>
-        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+          <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNabvar">
@@ -24,7 +24,7 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse justify-content-end" id="myNabvar">
                     <ul class="navbar-nav mr-4">  
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</span></a>
+                            <a class="nav-link" href="pruebas.php">Inicio</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown nav-item" href="#" id="mega-menu" data-toggle="dropdown">
@@ -34,75 +34,69 @@ and open the template in the editor.
                                 <div class="row">
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Instrumentos de Cuerda</h5>
-                                        <a class="dropdown-item" href="catalogo.html">Percusion</a>
-                                        <a class="dropdown-item" href="#">Cuerda</a>
-                                        <a class="dropdown-item" href="#">Viento</a>
-                                        <a class="dropdown-item" href="#">Audio</a>
+                                        <a class="dropdown-item" href="catalogoPrueba.php">Percusion</a>
+                                        <a class="dropdown-item" href="catalogoPrueba.php">Cuerda</a>
+                                        <a class="dropdown-item" href="catalogoPrueba.php">Viento</a>
+                                        <a class="dropdown-item" href="catalogoPrueba.php">Audio</a>
                                     </div>
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Instrumentos de Viento</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Instrumentos de Percusión</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Instrumentos Idíofonos</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Instrumentos Eléctricos</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Audio e Iluminación</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                     <div class="col-sm-3 col-lg-3">
                                         <h5>Accesorios</h5>
-                                        <a href="#" class="dropdown-item">Percusion</a>
-                                        <a href="#" class="dropdown-item">Cuerda</a>
-                                        <a href="#" class="dropdown-item">Viento</a>
-                                        <a href="#" class="dropdown-item">Audio</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Percusion</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Cuerda</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Viento</a>
+                                        <a href="catalogoPrueba.php" class="dropdown-item">Audio</a>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="eventos.html">Noticias</a>
+                            <a class="nav-link" href="noticiasPrueba.php">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                            <a class="nav-link" href="contactoPrueba.php">Contactanos</a>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-expanded-lg" role="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Buscar Productos">
 
-                        </div>
-                    </form>
                 </div>
             </div>
-
         </nav>
         <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('images/comprimida 2.jpg');">
             <div class="container">
