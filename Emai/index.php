@@ -39,12 +39,6 @@ and open the template in the editor.
                 <ul class="navbar-nav mr-4">
                 <?php echo $cIndex->MenuInstrumentos() ?>
                 </ul>
-                <form class="navbar-form navbar-expanded-lg" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar Productos">
-
-                    </div>
-                </form>
             </div>
         </div>
 
