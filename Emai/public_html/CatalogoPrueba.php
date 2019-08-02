@@ -153,35 +153,16 @@ and open the template in the editor.
                                         </span>
                                     </label>
                                 </div>
-                               
+
 
                                 <div class="title">
                                     <h3>Precio</h3>
                                 </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option4" checked=""> Precios Bajos
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
+                                <div class="col-lg-12">
+                                <div id="sliderDouble" class="slider slider-rose"></div>
                                 </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option4" checked=""> Precio Medio
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4" checked=""> Precios Altos
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
+
+
                                 <div class="title">
                                     <h3>Color</h3>
                                 </div>
@@ -406,6 +387,7 @@ and open the template in the editor.
         <script src="jss/core/bootstrap-material-design.min.js" type="text/javascript"></script>
         <script src="jss/material-kit.min.js" type="text/javascript"></script>
         <script src="jss/plugins/typed.js" type="text/javascript"></script>
+        <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
         <script>
             var typed = new Typed(".type", {
                 strings: ["Instrumentos", "Accesorios", "Refacciones", "Sonido", "Iluminación"],
@@ -415,6 +397,19 @@ and open the template in the editor.
             });
 
         </script>
+       
+            <script>
+                var slider2 = document.getElementById('sliderDouble');
+
+noUiSlider.create(slider2, {
+	start: [ 20, 60 ],
+	connect: true,
+	range: {
+		min:  0,
+		max:  100
+	}
+});
+                </script>
 
     </body>
 </html>
