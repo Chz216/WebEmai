@@ -27,7 +27,7 @@ if (!isset($_SESSION["autentificado"])){
         <title>Administrador  <?php echo $_SESSION["autentificado"]["usuario"] ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/material-kit.min.css" rel="stylesheet" type="text/css"/>
         <link href="../estilos/estilos.css" rel="stylesheet" type="text/css"/>
         <link href="../estilos/font-awesome.css" rel="stylesheet" type="text/css"/>
         <link href="../estilos/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -73,7 +73,7 @@ if (!isset($_SESSION["autentificado"])){
                                                 <img src="https://picsum.photos/650/540?random=2" alt="profile-image" class="profile"/>
                                             </div>
                                             <div class="card-content">
-                                                <h2><a href="panelProductos.php.php">Productos</a></h2>
+                                                <h2>Productos</h2>
                                                 <div class="icon-block">
                                                     <a href="nuevoProducto.php"><i class="fa fa-plus"></i></a>
                                                     <a href="Productos.php"><i class="fa fa-eye"></i></a>
@@ -91,7 +91,7 @@ if (!isset($_SESSION["autentificado"])){
                                                 <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
                                             </div>
                                             <div class="card-content">
-                                                <h2><a href="panelEventos.php">Noticias</a></h2>
+                                                <h2>Noticias</h2>
                                                 <div class="icon-block">
                                                     <a href="nuevoEvent.php"><i class="fa fa-plus"></i></a>
                                                     <a href="Eventos.php"><i class="fa fa-eye"></i></a>
@@ -114,6 +114,22 @@ if (!isset($_SESSION["autentificado"])){
                                                      <a href="nuevoAccesorio.php"><i class="fa fa-plus"></i></a>
                                                         <a href="editarAccesorio.php"><i class="fa fa-pencil-square-o"></i></a>
                                                         <a href="borrarAccesorio.php"><i class="fa fa-trash" ></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-6">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://picsum.photos/650/940?random=1"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://picsum.photos/650/540?random=5" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Comentarios</h2>
+                                                <div class="icon-block">
+                                                     <a href="#"><i class="fa fa-eye" ></i></a>
                                                 </div>
                                             </div>
                                         </div>
