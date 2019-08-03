@@ -154,18 +154,6 @@ class CProducto
         }
         return $acu;
     }
-    public function ConsultarMarca(){
-        $marcas = $this->modelo->Marca();
-        $acu = "";
-        foreach ($marcas  as $marca){
-            $acu = $acu . '
-       <select class="custom-select my-1 mr-sm-2" name="id_tipo_instrumento" id="inlineFormCustomSelectPref">
-                                <option selected>' . $marca["marca"] . '</option>
-        </select>';
-                    
-        }
-        return $acu;
-    }
     public function instrumento($id_instrumento){
         $instrumento= $this->modelo->consultarDetalle($id_instrumento);
         return $instrumento;

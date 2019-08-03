@@ -52,10 +52,12 @@ and open the template in the editor.
                                 <img src="<?php echo $instrumento["imagen1"]?>" class="zoom"/>
                             </div>
 
-                            <div class="col-lg-6 mt-3 text-center">
+                            <div class="col-lg-6 mt-3">
+                                <div class="col-lg-12 text-center">
                                 <h3>
                                     <small><?php echo $tipo_inst["nombre"]?></small>
                                 </h3>
+                                </div>
                                 
                                 <div class="card card-nav-tabs card-plain">
                                     <div class="card-header card-header-danger">
@@ -64,11 +66,9 @@ and open the template in the editor.
                                             <div class="nav-tabs-wrapper">
                                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                                     <li class="nav-item">
-                                                        <a class="nav-link active show" href="#home" data-toggle="tab">Marca<div class="ripple-container"></div></a>
+                                                        <a class="nav-link active show" href="#home" data-toggle="tab">Caracteristicas<div class="ripple-container"></div></a>
                                                     </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#updates" data-toggle="tab">Precio<div class="ripple-container"></div></a>
-                                                    </li>
+                                                   
                                                     <li class="nav-item">
                                                         <a class="nav-link" href="#history" data-toggle="tab">Imagenes<div class="ripple-container"></div></a>
                                                     </li>
@@ -77,13 +77,27 @@ and open the template in the editor.
                                         </div>
                                     </div>
                                     <div class="card-body ">
-                                        <div class="tab-content text-center">
+                                        <div class="tab-content">
                                             <div class="tab-pane active show" id="home">
-                                                <h2><?php echo $marca["marca"]?></h2>
+                                                <div class="col-lg-12 text-center">
+                                                    <h4>Marca:  <?php echo $marca["marca"]?></h4>
+                                                </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                <div class="col-lg-3">
+                                                    <h4>Descipción:</h4>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <p><?php echo $instrumento["descripcion"]?></p>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane" id="updates">
-                                                <h1>$ <?php echo $instrumento["precio"]?></h1>
+                                                </div>
+                                                <div class="col-lg-12 text-center">
+                                                    <h4>Precio:$1345</h4>
+                                                </div>
+                                            
                                             </div>
+                                            
                                             <div class="tab-pane" id="history">
                                                 
                                                     <div class="row">

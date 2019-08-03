@@ -75,12 +75,9 @@ class MProducto extends BD {
        }
        public function Marca() {
         try {
-               $stmt = $this->conn->prepare("select * from marca order by id_marca asc"); 
+               $stmt = $this->conn->prepare("SELECT * from marca group by id_marca asc limit 6"); 
                $stmt->execute();
-               foreach ($stmt->fetchAll() as $reg) {
-                   return $reg;
-               }
-               return null;
+               return $stmt->fetchAll();
            } catch (PDOException $e) {
                echo "Error: " . $e->getMessage();
         
