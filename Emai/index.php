@@ -61,7 +61,7 @@ and open the template in the editor.
 
             <div class="container">
 
-                    <div class="col-lg-12 sub-menu">
+                        <div class="col-lg-12 sub-menu">
                         <div class="row">
           <div class="col-md-6 mb-10px px-5px">
             <div class="card border-0 text-white text-center"><img src="images/guitarra.jpg" alt="Card image" class="card-img">
