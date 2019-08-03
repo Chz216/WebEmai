@@ -61,57 +61,58 @@ and open the template in the editor.
 
             <div class="container">
 
-                <div class="col-lg-12 sub-menu">
-                    <div class="row">
-                        <div class="col-md-6 mb-10px px-5px">
-                            <div class="card border-0 text-white text-center"><img src="images/guitarra.jpg" alt="Card image" class="card-img">
-                                <div class="card-img-overlay d-flex align-items-center">
-                                    <div class="w-100 py-3">
-                                        <h2 class="display-3 font-weight-bold mb-4">Guitarras</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-10px px-5px">
-                            <div class="card border-0 text-white text-center"><img src="images/piano.jpg" alt="Card image" class="card-img">
-                                <div class="card-img-overlay d-flex align-items-center">
-                                    <div class="w-100 py-3">
-                                        <h2 class="display-3 font-weight-bold mb-4">Pianos</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-4 mb-10px px-5px">
-                            <div class="card border-0 text-center text-white"><img src="images/bateria.jpg" alt="Card image" class="card-img">
-                                <div class="card-img-overlay d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h2 class="display-4 mb-4">Baterias</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-10px px-5px">
-                            <div class="card border-0 text-center text-white"><img src="images/accesorios.jpg" alt="Card image" class="card-img">
-                                <div class="card-img-overlay d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h2 class="display-4 mb-4">Accesorios</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-10px px-5px">
-                            <div class="card border-0 text-center text-white"><img src="images/audio.jpg" alt="Card image" class="card-img">
-                                <div class="card-img-overlay d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h2 class="display-4 mb-4">Audio e iluminación</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-12 sub-menu">
+                        <div class="row">
+          <div class="col-md-6 mb-10px px-5px">
+            <div class="card border-0 text-white text-center"><img src="images/guitarra.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                  <h2 class="display-3 font-weight-bold mb-4">Guitarras</h2>
+                  <a href="CatalogoPrueba.php" class="btn btn-light">Ver<i class="fa-arrow-right fa ml-2"></i></a>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-10px px-5px">
+              <div class="card border-0 text-white text-center"><img src="images/piano.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100 py-3">
+                    <h2 class="display-3 font-weight-bold mb-4">Pianos</h2><a href="CatalogoPrueba.php" class="btn btn-light">Ver<i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/bateria.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Baterias</h2><a href="CatalogoPrueba.php" class="btn btn-light text-white">Ver <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/accesorios.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Accesorios</h2><a href="CatalogoPrueba.php" class="btn btn-light text-white">Ver <i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-10px px-5px">
+              <div class="card border-0 text-center text-white"><img src="images/audio.jpg" alt="Card image" class="card-img">
+              <div class="card-img-overlay d-flex align-items-center"> 
+                <div class="w-100">
+                  <h2 class="display-4 mb-4">Audio e iluminación</h2><a href="CatalogoPrueba.php" class="btn btn-light text-white">Ver<i class="fa-arrow-right fa ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+            </div>
 
 
 
