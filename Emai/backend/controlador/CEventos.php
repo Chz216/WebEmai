@@ -23,11 +23,11 @@ class CEventos {
                 <div class="card-body">
 
                     <p class="text-justify"> ' .substr( $noticia["descripcion"],0,65) . '</p>
-                    <button class="btn btn-primary">
                     <a href="detalleEvento.php?id_noticia='.$noticia["id_noticia"].'">
+                    <button class="btn btn-primary">
                     Ver Mas
-                    </a>
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -51,11 +51,11 @@ class CEventos {
                 <div class="card-body">
 
                     <p class="text-justify"> ' .substr( $noticia["descripcion"],0,200) . '</p>
-                    <button class="btn btn-primary">
                     <a href="detalleEvento.php?id_noticia='.$noticia["id_noticia"].'">
-                    Ver más
-                    </a>
+                    <button class="btn btn-primary">                    
+                    Ver más                    
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,13 +76,12 @@ class CEventos {
                     </div>
                 </div>
                 <div class="card-body">
-
                     <p class="text-justify">' .substr( $noticia["descripcion"],0,200) . '</p>
-                    <button class="btn btn-primary">
                     <a href="detallEvento.php?id_noticia='.$noticia["id_noticia"].'">
-                    Ver más
-                    </a>
+                    <button class="btn btn-primary">                    
+                    Ver más                    
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

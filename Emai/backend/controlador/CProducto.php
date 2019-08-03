@@ -104,11 +104,12 @@ class CProducto
             <div class="card">
                 <img class="card-img-top" src="' . $instrumento["imagen1"] . '" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">' . $instrumento["descripcion"] . '</p>
-                    <button class="btn btn-primary">
+                    <p class="card-text">' . $instrumento["descripcion"] . '</p>                    
                     <a href="detalle.php?id_instrumento=' . $instrumento["id_instrumento"] . '">
-                    Ver más</a>
+                    <button class="btn btn-primary">
+                    Ver más
                     </button>
+                    </a>
                 </div>
             </div>
         </div>
