@@ -488,3 +488,6 @@ img.zoom {
     height: auto;
 }
  
+.admin .form-control{
+    background-image: none;
+}

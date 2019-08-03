@@ -76,8 +76,8 @@ if (!isset($_SESSION["autentificado"])){
                                                 <h2><a href="panelProductos.php.php">Productos</a></h2>
                                                 <div class="icon-block">
                                                     <a href="nuevoProducto.php"><i class="fa fa-plus"></i></a>
-                                                    <a href="editarProducto.php"><i class="fa fa-pencil-square-o"></i></a>
-                                                    <a href="#"><i class="fa fa-trash" ></i></a>
+                                                    <a href="Productos.php"><i class="fa fa-eye"></i></a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -93,9 +93,9 @@ if (!isset($_SESSION["autentificado"])){
                                             <div class="card-content">
                                                 <h2><a href="panelEventos.php">Noticias</a></h2>
                                                 <div class="icon-block">
-                                                     <a href="panelEventos.php"><i class="fa fa-plus"></i></a>
-                                                        <a href="panelEventos.php"><i class="fa fa-pencil-square-o"></i></a>
-                                                        <a href="panelEventos.php"><i class="fa fa-trash" ></i></a>
+                                                    <a href="nuevoEvent.php"><i class="fa fa-plus"></i></a>
+                                                    <a href="Eventos.php"><i class="fa fa-eye"></i></a>
+                                                        
                                                 </div>
                                             </div>
                                         </div>
