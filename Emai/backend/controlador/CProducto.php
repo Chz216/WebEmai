@@ -118,6 +118,30 @@ class CProducto
         }
         return $acu;
     }
+    public function InstrumentosCatalogoPag($inicio,$fin)
+    {
+        $instrumentos = $this->modelo->consultarInstrumentosPag($inicio,$fin);
+        $acu = "";
+        foreach ($instrumentos as $instrumento) {
+            $acu = $acu . '
+            <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="' . $instrumento["imagen1"] . '" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">' . $instrumento["descripcion"] . '</p>                    
+                    <a href="detalle.php?id_instrumento=' . $instrumento["id_instrumento"] . '">
+                    <button class="btn btn-primary">
+                    Ver más
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+                ';
+        }
+        return $acu;
+    }
 
     public function marcasCatalogo()
     {

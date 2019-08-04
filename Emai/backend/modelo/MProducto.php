@@ -111,7 +111,7 @@ class MProducto extends BD {
      public function consultarInstrumentos() {
      try {
 
-            $stmt = $this->conn->prepare("SELECT * from instrumento order by id_instrumento limit 12");
+            $stmt = $this->conn->prepare("SELECT * from instrumento order by id_instrumento limit 0, 12");
             $stmt->execute();
             
             return $stmt->fetchAll();
@@ -120,6 +120,18 @@ class MProducto extends BD {
      
             }    
     }
+    public function consultarInstrumentosPag($inicio,$fin) {
+        try {
+   
+               $stmt = $this->conn->prepare("SELECT * from instrumento order by id_instrumento limit $inicio, $fin");
+               $stmt->execute();
+               
+               return $stmt->fetchAll();
+           } catch (PDOException $e) {
+               echo "Error: " . $e->getMessage();
+        
+               }    
+       }
      public function Paginacion() {
      try {
             $stmt = $this->conn->prepare("SELECT * from instrumento LIMIT 12 ");

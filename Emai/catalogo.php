@@ -1,10 +1,21 @@
 <?php
 include_once './backend/modelo/BD.php';
+include_once './backend/modelo/BD2.php';
 include_once './backend/modelo/MProducto.php';
 include_once './backend/controlador/CProducto.php';
 include_once './backend/controlador/CIndex.php';
 $cIndex = new CIndex();
 $cProducto = new CProducto();
+//Paginación
+$sql='SELECT * FROM instrumento';
+$sentencia=$pdo->prepare($sql);
+$sentencia->execute();
+$resultado=$sentencia->fetchAll();
+$total_articulos=$sentencia->rowCount();
+$articulos_x_pagina=12;
+$paginas=$total_articulos/$articulos_x_pagina;
+$paginas=ceil($paginas);
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -26,6 +37,16 @@ and open the template in the editor.
 </head>
 
 <body>
+<?php 
+    if(!$_GET){
+        header('Location:catalogo.php?pagina=1');
+    }
+    if($_GET['pagina']>$articulos_x_pagina || $_GET['pagina']<=0 ){
+        header('Location:catalogo.php?pagina=1');
+    }
+
+    $iniciar=($_GET['pagina']-1)*$articulos_x_pagina;
+?>
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <a class="navbar-brand" href="index.php"><img src="images/log_emai.png" alt="navbar" width="110px"></a>
@@ -91,24 +112,36 @@ and open the template in the editor.
                             <div class="col-lg-12">
                                 <div class="row">
 
-                                    <?php echo $cProducto->InstrumentosCatalogo() ?>
+                                    <?php echo $cProducto->InstrumentosCatalogoPag($iniciar, $articulos_x_pagina) ?>
 
                                     <div class="col-lg-12">
-                                        <nav aria-label="..." class="pagination justify-content-center">
-                                            <ul class="pagination">
-                                                <li class="page-item disabled">
-                                                    <span class="page-link">Previous</span>
+                                        
+                                        
+                                        <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                        <li class="page-item
+                                        <?php echo $_GET['pagina']<=1? 'disabled':'' ?>
+                                         ">
+                                        <a class="page-link" href="catalogo.php?pagina=<?php echo $_GET['pagina']-1 ?>" tabindex="-1">Anterior</a>
+                                        </li>
+                                        
+                                        <?php for($i=0;$i<$paginas;$i++): ?>
+                                                <li class="page-item 
+                                                <?php echo $_GET['pagina']==$i+1 ? 'active':'' ?>">
+                                                <a class="page-link" 
+                                                href="catalogo.php?pagina=<?php echo $i+1 ?>">
+                                                        <?php echo $i+1?></a>
                                                 </li>
-                                                <li class="page-item"><a class="page-link" href="#">
-                                                        1</a>
-                                                </li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">Next</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
+                                                <?php endfor ?>
+                                        
+                                        <li class="page-item
+                                        <?php echo $_GET['pagina']>=$paginas? 'disabled':'' ?>
+                                        ">
+                                        <a class="page-link" href="catalogo.php?pagina=<?php echo $_GET['pagina']+1 ?>">Siguiente</a>
+                                        </li>
+                                    </ul>
+</nav>
+
                                     </div>
 
                                 </div>
@@ -122,7 +155,8 @@ and open the template in the editor.
 
             </div>
         </div>
-
+        
+        
 
 
 
