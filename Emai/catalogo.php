@@ -61,7 +61,9 @@ and open the template in the editor.
                 <form class="navbar-form navbar-expanded-lg" role="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Buscar Productos">
-
+                        <button class="btn btn-primary btn-fab btn-round" type="submit">
+                <i class="fa fa-search"></i>
+              <div class="ripple-container"></div></button>
                     </div>
                 </form>
             </div>
