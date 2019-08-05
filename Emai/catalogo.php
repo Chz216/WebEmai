@@ -105,8 +105,6 @@ and open the template in the editor.
                                 <div class="col-lg-12">
                                     <div id="sliderDouble" class="slider slider-rose"></div>
                                 </div>
-
-
                                 <div class="title">
                                     <h3>Categoria</h3>
                                 </div>
